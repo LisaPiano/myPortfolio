@@ -21,30 +21,46 @@
                 </div>
                 <div class="right-header">
                     <h1 class="name">
-                        Hi, I'm <span>Lisa Campi Walters</span>
-                        A Web Developer.
+                        Hi, I'm <br>
+                        
+                        <div class="wrapper">
+                            <svg>
+                                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                                    Lisa Campi Walters
+                                </text>
+                            </svg>
+                        </div>
+                        
+                        <br>A Front End Developer
                     </h1>
                     <p>
-                        I'm a Web Developer, I love to create beautiful and functional websites
-                        BLLLLLLHJHAHH
+                        I love to create beautiful and functional websites, and I especially enjoy Codewars in my spare time!
                     </p>
+
+                    <!-- BUTTON -->
                     <div class="btn-con">
                         <a href="#" class="main-btn">
                         <span class="btn-text">DOWNLOAD CV or RESUME</span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                         </a>
                     </div>
+
+
                 </div>
             </div>
         </header>
         <main>
         
                     
-            </ABOUT ----------------------------------------------------------------------------section> 
+            <!-- </ABOUT ----------------------------------------------------------------------------section>  -->
         <section class="section sec2 about" id="about">
+
+            <!-- TITLE -->
             <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+                <h2>About <span class="first-word">me</span></h2>
             </div>
+
+
             <div class="about-container">
                 <div class="left-about">
                     <h4>Information about me</h4>
@@ -83,13 +99,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
 
 
 
@@ -184,9 +193,12 @@
 <!-- 
         PORTFOLIO SECTION============================== -->
         <section class="section sec3" id="portfolio">
+
+              <!-- TITLE -->
         <div class="main-title">
-            <h2>My <span>Portfolio</span><span class="bg-text">My Projects</span></h2>
+            <h2>My <span class="first-word">Portfolio</span></h2>
         </div>
+
         <p class = "portfolio-text">
             OBJECTIVE
 I am a self-directed and meticulous developer with a passion for solving complex problems and creating beautiful, efficient, and user-friendly web and software applications. Skilled in HTML, CSS, JavaScript, C#, and SQL, with experience in both front-end and back-end development, I have a strong ability to learn new technologies quickly and meet project deadlines. I am extremely interested in relocating, and I would be happy to work in-person, remotely, or in a hybrid position.
@@ -329,57 +341,118 @@ I am a self-directed and meticulous developer with a passion for solving complex
         </div>
     </section>
 
-    <!-- This is the end of the portfolio =======================================================================
+    <!-- CONTACT SECTION ======================================================================= -->
+ <section class="section sec4 contact" id="contact">
+    <div class="contact-container">
+    <!-- title -->
+    <div class="main-title">
+        <h2>Contact <span class="first-word">Me</span></h2>
+    </div>
 
-        Beginning of the blog section ===========================================================================-->
+    <div class="contact-content-con">
+        <div class="left-contact">
+            <h4>Contact Me Here</h4>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+            </p>
+            <div class="contact-info">
 
-        <section class="section sec4" id="blogs">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>        
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                       Location
+                       <p>I would be very happy to relocate</p><br>
+                    </div>
                 </div>
-                <div class="blogs">
-                    <div class="blog">
-                        <img src = "img/lisapictureresized1.jpg" alt="a picture of lisa taking up">
-                        <div class="blog-text">
 
-                    </div>
-                    <div class="blog">
-                        
-                    </div>
-                    <div class="blog">
-                        
-                    </div>
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                        <p><a href="mailto: lisacampiwalters@gmail.com">lisacapiwalters@gmail.com</a></p><br>
                 </div>
             </div>
 
+            <div class="contact-item">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                        cell-phone
+                        <p>970-946-9729</p><br>
+                </div>
+            </div>
+            <div class="contact-items">
+                <div class="contact-icon">
+                    <a href="www.facebook.com" target="blank"></a>
+                    <i class="fab fa-facebook-f"></i>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="right-contact">
+            <form action="" class="contact-form">
+                <div class="input-control">
+                    <input type="text" required placeholder="YOUR NAME">
+                    <input type="email" required placeholder="YOUR EMAIL">
+                </div>
+<div class="input-control">
+    <input type="text" required placeholder="ENTER SUBJECT">
+</div>
+
+
+
+            </form>
+
+        </div>
+    </div>
 
 
 
 
-        </section>
-        <!-- End of blog +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-    
-        <section class="section sec5 contact" id="contact"></section>
+
+
+
+
+
+
+    </div>
+    <!-- end contact container -->
+
+
+
+
+
+
+
+
+
+</section>
     </main>
+
+
 <!-- HERE IS THE SECTION OF BUTTONS================================================================================= -->
     <div class="controls">
-        <div class="control control-1 active-btn" data-id="home">
+        <div class="control control-1 active-btn grow" data-id="home">
             <i class="fas fa-home"></i>
         </div>
-        <div class="control control-2" data-id="about">
+        <label class="label grow">Home</label>
+
+        <div class="control control-2 grow" data-id="about">
             <i class="fas fa-user"></i>
         </div>
-        <div class="control control-3" data-id="portfolio">
+        <label class="label grow">About Me</label>
+
+        <div class="control control-3 grow" data-id="portfolio">
             <i class="fas fa-briefcase"></i>
         </div>
-        <div class="control control-4" data-id="blogs">
-            <i class="fas fa-newspaper"></i>
-        </div>
-        <div class="control control-5" data-id="contact">
+        <label class="label grow">Portfolio</label>
+
+        <div class="control control-5 grow" data-id="contact">
             <i class="fas fa-envelope"></i>
         </div>
+        <label class="label grow">Contact Me</label>
     </div>
     <script src="app.js"></script>
 </body> 
