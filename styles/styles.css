@@ -7,7 +7,8 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #2A9D84;
+  --color-secondary: #27ae60;
+  --color-lightbutton: #F56692;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey-0: #f8f8f8;
@@ -19,6 +20,21 @@
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
+}
+
+.light-mode {
+  --color-primary: #FFFFFF;
+  --color-secondary: #F56692;
+  --color-lightbutton: #27ae60;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey-0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f8f8f8;
+  --color-grey-6: #12181b;
 }
 
 #name {
@@ -160,17 +176,42 @@ svg text {
   }
   80% {
     fill: rgba(72, 138, 204, 0);
-    stroke: #2A9D84;
+    stroke: #27AE60;
     stroke-width: 3;
   }
   100% {
-    fill: #2A9D84;
+    fill: #27AE60;
     stroke: rgba(42, 157, 132, 0);
     stroke-dashoffset: -25%;
     stroke-dasharray: 50% 0;
     stroke-width: 0;
   }
 }
+.theme-btn {
+  color: var(--color-lightbutton);
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+.theme-btn:active {
+  transform: traslateY(-50px);
+}
+.theme-btn i {
+  font-size: 1.4rem;
+  color: var(--color-lightbutton);
+  pointer-events: none;
+}
+
 .header-content {
   display: grid;
   grid-template-columns: 35% 65%;
