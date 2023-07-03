@@ -10,19 +10,22 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body class="main-content">
     <header class="section sec1 header active" id="home">
+
         <div class="header-content">
+
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
                     <img src="img/lisaPictureResized2.jpg" alt = "picture of Lisa Campi Walters">
-                    </div>
                 </div>
-                <div class="right-header">
-                    <h1 class="name">
-                        Hi, I'm <br>
-                        
+            </div>
+
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <br>
                         <div class="wrapper">
                             <svg>
                                 <text x="50%" y="50%" dy=".35em" text-anchor="middle">
@@ -30,9 +33,9 @@
                                 </text>
                             </svg>
                         </div>
-                        
-                        <br>A Front End Developer
-                    </h1>
+                            <br>A Front End Developer
+                </h1>    
+
                     <p>
                         I love to create beautiful and functional websites, and I especially enjoy Codewars in my spare time!
                     </p>
@@ -46,10 +49,11 @@
                     </div>
 
 
-                </div>
             </div>
-        </header>
-        <main>
+        </div>
+    </header>
+
+<main>
         
                     
             <!-- </ABOUT ----------------------------------------------------------------------------section>  -->
@@ -434,25 +438,28 @@ I am a self-directed and meticulous developer with a passion for solving complex
 
 <!-- HERE IS THE SECTION OF BUTTONS================================================================================= -->
     <div class="controls">
-        <div class="control control-1 active-btn grow" data-id="home">
+       
+        <label id="home" for="home" class="label grow">Home</label>
+        <div class="control control-1 active-btn grow" id="home" data-id="home">
             <i class="fas fa-home"></i>
         </div>
-        <label class="label grow">Home</label>
-
-        <div class="control control-2 grow" data-id="about">
+      
+    
+        <label id="about" for="about" class="label grow">About Me</label>
+        <div class="control control-2 grow" id="about" data-id="about">
             <i class="fas fa-user"></i>
         </div>
-        <label class="label grow">About Me</label>
+      
 
-        <div class="control control-3 grow" data-id="portfolio">
+        <label id="portfolio" for="portfolio" class="label grow">Portfolio</label>
+        <div class="control control-3 grow" id="portfolio" data-id="portfolio">
             <i class="fas fa-briefcase"></i>
         </div>
-        <label class="label grow">Portfolio</label>
-
-        <div class="control control-5 grow" data-id="contact">
+       
+        <label id="contact" for="contact" class="label grow">Contact</label>
+        <div class="control control-5 grow" id="contact" data-id="contact">
             <i class="fas fa-envelope"></i>
         </div>
-        <label class="label grow">Contact Me</label>
     </div>
 
     <!-- End Controls++++++++++++++++++++++++++++= -->
