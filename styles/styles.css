@@ -196,14 +196,15 @@ svg text {
 }
 .theme-btn {
   color: var(--color-lightbutton);
+  position: absolute;
   top: 5%;
-  right: 3%;
+  right: 5%;
+  overflow-y: auto;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background-color: var(--color-grey-4);
   cursor: pointer;
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,35 +253,65 @@ p {
 }
 
 p {
-  margin: 1.5rem 0;
   line-height: 2rem;
+  width: 93%;
+  margin: 20px;
 }
 
 @media (min-width: 600px) {
   p {
     max-width: 96%;
-    margin-left: 50px;
-    margin-right: 50px;
+  }
+  svg text {
+    font-size: 3rem;
   }
 }
 @media (min-width: 769px) {
+  h1.name {
+    border: 3px solid red;
+    height: 57%;
+  }
+  header {
+    height: 100vh;
+    overflow: hidden;
+  }
+  text {
+    font-size: 18;
+  }
+  svg {
+    border: 3px solid yellow;
+    width: 340px;
+    height: 87%;
+    text-align: center;
+  }
+  svg text {
+    font-size: 2.1rem;
+    text-align: center;
+  }
   .controls {
+    width: 10%;
     position: fixed;
-    z-index: 10;
-    top: 50%;
+    top: 58%;
     right: 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     transform: translateY(-50%);
+    border: 3px solid white;
   }
-  header-content .header-content .left-header {
+  .control {
+    margin: 0.7rem;
+    width: 40px;
+    height: 40px;
+  }
+  .header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+  }
+  .header-content .left-header {
     display: flex;
     align-items: center;
     position: relative;
   }
-  header-content .header-content .left-header .h-shape {
+  .header-content .left-header .h-shape {
     transition: all 0.4 ease-in-out;
     width: 65%;
     height: 100%;
@@ -292,24 +323,7 @@ p {
     -webkit-clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
             clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
   }
-  header-content .header-content .left-header {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  header-content .header-content .left-header .h-shape {
-    transition: all 0.4 ease-in-out;
-    width: 65%;
-    height: 100%;
-    background-color: var(--color-secondary);
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    -webkit-clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
-  }
-  .image {
+  .header-content .left-header .image {
     border-radius: var(--br-sm-2);
     height: 90%;
     width: 68%;
@@ -317,7 +331,7 @@ p {
     background-color: var(--color-black);
     transition: all 0.4s ease-in-out;
   }
-  .image img {
+  .header-content .left-header .image img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -325,24 +339,38 @@ p {
     transition: all 0.4s ease-in-out;
     filter: grayscale(100%);
   }
-  .image img:hover {
+  .header-content .left-header .image img:hover {
     filter: grayscale(0);
   }
-  .right-header {
+  .header-content .right-header {
+    border: 3px solid purple;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 18rem;
+    padding-right: 8rem;
   }
-  .right-header .name {
-    font-size: 3rem;
-    line-height: 4px;
+  .header-content .right-header .name {
+    font-size: 1.8rem;
+    line-height: 37px;
   }
-  .right-header .name span {
+  .header-content .right-header .name span {
     color: var(--color-secondary);
   }
-  .right-header p {
+  .header-content .right-header p {
+    border: 3px solid green;
+    text-align: center;
     margin: 1.5rem 0;
     line-height: 2rem;
+  }
+}
+@media (min-width: 769px) {
+  h1.name {
+    width: 90%;
+  }
+  .controls {
+    right: 0%;
+  }
+  .theme-btn {
+    right: 3%;
   }
 }/*# sourceMappingURL=styles.css.map */
