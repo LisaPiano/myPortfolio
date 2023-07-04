@@ -51,6 +51,7 @@ body {
     overflow-x: hidden;
     text-align: center;
     margin-top: 30px;
+    position: relative;
 }
 
 
@@ -95,13 +96,11 @@ header {
 }
 
 section{
+    border: 3px solid yellow;
     min-height: 100vh;
     width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 3rem 18rem;
     text-align: center;
+    margin-top: 433px;
 }
 
 .section {
@@ -130,7 +129,7 @@ section{
 }
 
 // //Controls--overall button section========================================================================
-.controls{
+.controls {
     z-index: 10; //show over everything else
     display: flex;
     flex-direction: column;
@@ -138,6 +137,7 @@ section{
     justify-content: center;
     transform: translateY(7%);//centered in the y axis
     padding: 5px;
+    border: 3px solid orange;
 
 //     //each individual button==================================================================================
 
@@ -155,12 +155,13 @@ section{
         cursor: pointer;
         background-color: var(--color-grey-4);
         border-radius: 50%;
-        width: 55px;
-        height: 55px;
+        width: 20px;
+        height: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 25px;
+        margin-top: 7px;
         box-shadow: var(--box-shadow)-1;
 
         i{
@@ -170,6 +171,8 @@ section{
         }
     }
 }
+
+
 
 .label {
     text-align: center;
@@ -214,7 +217,7 @@ svg text {
 .theme-btn {
     color: var(--color-lightbutton);
     position: absolute;
-    top: 5%;
+    top: 0;
     right: 5%;
     overflow-y: auto;
     width: 60px;
@@ -283,28 +286,35 @@ svg text {
 
 
 
-// //ABOUT CONTAINER++++++++++++++++++++
-// .about-container {
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//     padding-top: 3.5rem;
-//     padding-bottom: 5rem;
-//     .right-about {
-//         display: grid;
-//         grid-template-columns: repeat(2, 1fr);
-//         grid-gap: 2rem;
+// ABOUT CONTAINER++++++++++++++++++++
+.main-title {
+    font-size: 4rem;
+}
 
-//         .about-item {
-//             border: 1px solid var(--color-grey-5);
-//             border-radius: 5px;
-//             transition: all .4s ease-in-out;
-//             box-shadow: 1px 2px 15px rgba(0,0,0,.1);
-//             &:hover {
-//                 cursor: default;
-//                 transform: translate(-5px);
-//                 border: 1px solid var(--color-secondary);
-//                 box-shadow: 1px 4px 15px rgba(0,0,0,.32);
-//             }
+h2 {
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    color: var(--color-secondary);
+}
+
+        .about-item {
+            border: 1px solid var(--color-grey-5);
+            border-radius: 5px;
+            transition: all .4s ease-in-out;
+            box-shadow: 1px 2px 15px rgba(0,0,0,.1);
+            &:hover {
+                cursor: default;
+                transform: translate(-5px);
+                border: 1px solid var(--color-secondary);
+                box-shadow: 1px 4px 15px rgba(0,0,0,.32);
+            }
+        }
 //             .abt-text {
 //                 padding: 1.5rem;
 //                 display: flex;
@@ -462,10 +472,10 @@ svg text {
 
 //         //Portfolio======================================================================================================
 
-//         .portfolio-text {
-//             padding: 2rem 0;
-//             text-align: center;
-//         }
+        .portfolio-text {
+            padding: 2rem 0;
+            text-align: center;
+        }
 
 //         .portfolios {
 //             display: grid;
@@ -562,6 +572,7 @@ svg text {
 
 
 @media (min-width: 600px) {
+    //page1-----------------------------------------------------------
     p {
         max-width: 96%;
     }
@@ -569,10 +580,24 @@ svg text {
     svg text {
         font-size: 3rem;
     }
+
+    .control {
+        margin: .7rem;
+        width: 40px;
+        height: 40px;
+    }
+
+    .controls {
+        flex-direction: row;
+        margin: 10px; 
+    }
+    
 }
-// ============================================================================================
+// End 600px============================================================================================
 
 @media (min-width: 769px) {
+
+    //page1-----------------------------------------------------------
 
     h1.name {
         border: 3px solid red;
@@ -600,7 +625,7 @@ svg text {
     text-align: center;
 }
 
-.controls{
+.page1{
     width: 10%;
     position: fixed;
     top: 58%;
@@ -609,11 +634,8 @@ svg text {
     border: 3px solid white;
 }
 
-.control {
-    margin: .7rem;
-    width: 40px;
-    height: 40px;
-}
+
+
 
 .header-content {
     display: grid;
@@ -677,10 +699,22 @@ img{
  }
 }
 }
+}
+//Begin ABOUT 769
+
+
+section {
+    margin-top: 7%;
+
+
+.theme-btn {
+    top: 17%;
+}
+}
 
 
 
-//ABOUT CONTAINER++++++++++++++++++++
+// ABOUT CONTAINER++++++++++++++++++++
 // .about-container {
 //     display: grid;
 //     grid-template-columns: repeat(2, 1fr);
@@ -857,6 +891,33 @@ img{
 //             }
 //         }
 
+
+
+// END 769px===================================================================================================
+@media (min-width: 1200px) {
+
+    //page1-----------------------------------------------------------
+
+        h1.name {
+            width: 90%;
+        }
+
+        .page1 {
+            right: 0%;
+        }
+
+        .theme-btn {
+            right: 3%;
+        }
+
+    }
+
+
+
+
+
+
+
 //         //Portfolio======================================================================================================
 
 //         .portfolio-text {
@@ -951,27 +1012,7 @@ img{
 //     flex-direction: column;
 //     margin-left: 0;
 //     margin-top: 1.5rem;
-// }
-
-
-}//end this media query
-
-
-@media (min-width: 769px) {
-
-        h1.name {
-            width: 90%;
-        }
-
-        .controls {
-            right: 0%;
-        }
-
-        .theme-btn {
-            right: 3%;
-        }
 
 
 
 
-}//end 1200 media query

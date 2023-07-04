@@ -1,21 +1,30 @@
 
-const sections = document.querySelectorAll('.section');
-const sectBtns = document.querySelectorAll('.controls');
-const sectBtn = document.querySelectorAll('.control');
-const allSections = document.querySelector('.main-content');
+const sections = document.querySelectorAll('.section');//header
+const sectBtns = document.querySelectorAll('.controls'); //overall section of buttons
+const sectBtn = document.querySelectorAll('.control');//button
+// const click = document.querySelectorAll('.click');
+const allSections = document.querySelector('.main-content'); //body
 
 function PageTransitions(){
-    //Button Click active class
+    //Button Click active class--changes green and where is active class
     for(let i = 0; i < sectBtn.length; i++){
-        sectBtn[i].addEventListener('click', function() {
-            let currentBtn = document.querySelectorAll('.active-btn');
-            currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
-            this.className += ' active-btn';
-        }) 
+      sectBtn[i].addEventListener('click', function() {
+         let currentBtn = document.querySelectorAll('.active-btn');
+          currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
+           this.className += ' active-btn';
+    }) 
     }
 
-    //Sections Active Class
+        //Button Click active class
+        // for(let i = 0; i < click.length; i++){
+        //     click[i].addEventListener('click', function() {
+        //         let currentBtn = document.querySelectorAll('.active-btn');
+        //         currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
+        //         this.className += ' active-btn';
+        //     }) 
+        // }
 
+    //Sections Active Class
     allSections.addEventListener('click', (e) => {
         //whatever is clicked, target the dataset, and put that dataset into variable
         const id = e.target.dataset.id;
@@ -35,6 +44,9 @@ function PageTransitions(){
         }    
     })
 
+
+
+    
     // TOGGLE THEME===========================================================
 
 const themeBtn = document.querySelector('.theme-btn');
