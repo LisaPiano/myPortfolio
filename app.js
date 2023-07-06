@@ -2,7 +2,6 @@
 const sections = document.querySelectorAll('.section');//header
 const sectBtns = document.querySelectorAll('.controls'); //overall section of buttons
 const sectBtn = document.querySelectorAll('.control');//button
-// const click = document.querySelectorAll('.click');
 const allSections = document.querySelector('.main-content'); //body
 
 function PageTransitions(){
@@ -15,14 +14,6 @@ function PageTransitions(){
     }) 
     }
 
-        //Button Click active class
-        // for(let i = 0; i < click.length; i++){
-        //     click[i].addEventListener('click', function() {
-        //         let currentBtn = document.querySelectorAll('.active-btn');
-        //         currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
-        //         this.className += ' active-btn';
-        //     }) 
-        // }
 
     //Sections Active Class
     allSections.addEventListener('click', (e) => {
