@@ -42,7 +42,6 @@ body {
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   color: var(--color-white);
-  transition: all 0.4s ease-in-out;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -59,11 +58,6 @@ body {
   display: inline-block;
 }
 
-.main-title {
-  font-size: 4rem;
-  border: 3px solid yellow;
-}
-
 h2 {
   font-size: 3.7rem;
 }
@@ -75,6 +69,10 @@ h2 {
 .grow {
   transition: all 0.2s ease-in-out;
   color: var(--color-white);
+}
+
+div.header-content {
+  display: block;
 }
 
 .grow:hover {
@@ -213,8 +211,6 @@ svg text {
   padding: 25px;
   font-weight: 500;
   margin: 30px auto;
-  border: 3px solid white;
-  border-radius: 90%;
 }
 
 .btn-text {
@@ -370,6 +366,14 @@ p.skill {
 .clickOnButton {
   height: 100px;
   width: 100px;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--color-secondary);
+  margin: 10px;
+}
+
+.clikOnButton:hover {
+  background: red;
 }
 
 .hiddenMessage {
@@ -406,12 +410,6 @@ p.skill {
 .project-link:hover {
   cursor: pointer;
   color: var(--color-secondary);
-}
-
-.project-container {
-  border-bottom: 3px solid white;
-  margin: 40px;
-  padding: 20px;
 }
 
 .contact {
@@ -539,8 +537,9 @@ textarea {
 /* footer styling */
 #footer {
   background-color: var(--color-grey-1);
-  margin-top: 30px;
+  margin-top: 7px;
   padding-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 430px) {
@@ -571,7 +570,14 @@ textarea {
 @media (min-width: 769px) {
   h1.name {
     border: 3px solid red;
-    height: 57%;
+    height: 42%;
+    width: 80%;
+    margin-left: 70px;
+    padding-top: 15px;
+    padding-bottom: 125px;
+  }
+  .btn-con {
+    margin-bottom: 17px;
   }
   text {
     font-size: 18;
@@ -581,6 +587,8 @@ textarea {
     width: 340px;
     height: 87%;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 24px;
   }
   svg text {
     font-size: 2.1rem;
@@ -596,6 +604,17 @@ textarea {
     right: 3%;
     transform: translateY(-50%);
     border: 3px solid white;
+  }
+  div.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+  img {
+    height: 470px;
+    width: 333px;
+    margin-left: 10px;
   }
   section {
     margin-top: 7%;

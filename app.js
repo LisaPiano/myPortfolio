@@ -17,10 +17,10 @@ const open = document.querySelector('.open');
 
 clickOnButton.addEventListener('click', () => {
     hiddenMessage.classList.toggle('surpriseMessage');
-    if (open.innerHTML == "Click....for information!"){
-    open.textContent ="Close";
+    if (open.innerHTML == "Click for more information!"){
+    open.textContent ="Click to close";
     } else {
-        open.textContent = "Click....for information!";
+        open.textContent = "Click for more information!";
     }
 })
 
