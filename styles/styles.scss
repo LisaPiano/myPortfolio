@@ -86,6 +86,9 @@ h2 {
     color: var(--color-white);
 }
 
+
+
+
 .grow:hover {
     transform: scale(1.2);
     color: var(--color-secondary);
@@ -94,13 +97,16 @@ h2 {
 .main-nav {
     display: flex;
     flex-direction: column; 
-    margin-bottom: 22px;
-    border: 3px solid red;
+    margin-bottom: 15px;
+    margin-top: 33px;
+    padding-top: 18px;
 }
 
 .topnav {
     margin-bottom: 20px;
 }
+
+
 
 // Overall Body===========================================================================
 
@@ -136,6 +142,11 @@ section{
     transform: translateY(0) scale(1);
 }
 
+.paragraph {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
 //Screen descending of whatever section is active
 .active {
     display: block;
@@ -162,8 +173,11 @@ svg text {
 	animation: stroke 4s;
 	stroke-width: 2;
 	stroke: var(--color-secondary);
-    font-size: 24px;
+    font-size: 30px;
 }
+
+
+
 @keyframes stroke {
 	0%   {
 		fill: rgba(72,138,204,0); stroke: rgba(42,157,132,1);
@@ -185,7 +199,7 @@ svg text {
 .theme-btn {
     color: var(--color-lightbutton);
     position: absolute;
-    top: 0;
+    top: 16px;
     right: 5%;
     overflow-y: auto;
     width: 36px;
@@ -210,7 +224,20 @@ svg text {
 }
 
 .btn-con {
-    padding-bottom: 10px;
+    width: 80%;
+    padding: 25px;
+    font-weight: 500;
+    margin: 30px auto;
+    border: 3px solid white;
+    border-radius: 90%;
+}
+
+.btn-text {
+    color: red;
+}
+
+.btn-con:hover {
+    background: var(--color-grey-3);
 }
 // // End light-dark-mode+=============================================
 
@@ -221,8 +248,6 @@ svg text {
         border-radius: var(--br-sm-2);
         width: 100%;
         margin: auto;
-        background-color: var(--color-black);
-        transition: all .4s ease-in-out;
  }
     img {
         object-fit: cover;
@@ -246,14 +271,6 @@ svg text {
     }
  }  
  
- p {
-    line-height: 2rem;
-    width: 100%;
-    margin: 20px;
-    font-size: 19px;
-    width: 90%;
- }
-
 
 
 // ABOUT CONTAINER++++++++++++++++++++
@@ -409,11 +426,13 @@ h4 {
 
 .list-container ul li p {
     position: relative;
-    z-index: 10;
-    padding: 5px 10px;
     color: #fff;
+    margin-top: 15px;
+}
 
-
+p.skill {
+    font-size: 12px;
+    margin-left: 48px;
 }
 
 
@@ -424,8 +443,6 @@ h4 {
             text-align: center;
         }
 
-        
-
         .projects {
             background-color: var(--bg-color);
             padding: 32px 0;
@@ -433,7 +450,23 @@ h4 {
           }
           
           .project-pic {
-            width: 80%;
+            max-width: 80%;
+          }
+
+          .project-link {
+            margin: 40px;
+            border: 3px solid var(--color-secondary);
+          }
+
+          .project-link:hover {
+            cursor: pointer;
+            color: var(--color-secondary);
+          }
+
+          .project-container {
+            border-bottom: 3px solid white;
+            margin: 40px;
+            padding: 20px;
           }
           
          
@@ -455,6 +488,22 @@ ul {
     padding: 0;
 }
 
+li {
+    padding: 20px;
+    font-size: 1rem;
+}
+
+ul li {
+    transition: all .2s ease-in-out;
+}
+
+ul li:hover {
+
+        transform: scale(1.1);
+        color: var(--color-black);
+    }
+
+
 .brand {
     text-align: center;
 }
@@ -473,6 +522,8 @@ ul {
 
 .info {
     background: var(--color-secondary);
+    text-align: center;
+    width: 100%;
 }
 
 .info h3, .info ul {
@@ -485,35 +536,33 @@ ul {
 }
 
 //Form styles for contact here
-
-.contact form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    height: 30px;
+    width: 100%;
 }
 
 .contact form label {
-    display: block;
+   margin-bottom: 18px;
 }
 
 .contact form p {
     margin: 0;
 }
 
-.contact form .full {
-    grid-column: 1 / 3;
-}
-
-// .contact-form button, .contact form input, .contact form textarea {
-//     width: 100%;
-//     padding: 1em;
-//     border: 1px solid #c9e6ff;
-// }
-
 .contact form button {
     background: var(--color-secondary);
     border: 0;
     text-transform: uppercase;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 18px;
 }
 
 .contact form button:hover, .contact form button:focus {
@@ -522,12 +571,22 @@ ul {
     transition: background-color 2s ease-out;
 }
 
+label {
+    margin-top: 55px;
+}
+
+textarea {
+    width: 100%;
+}
+
 //End Contact Section---BEGIN FOOTER SECTION++++++++++++++++++++++++++++++++++++++++++++++++++
 
 /* social media icons styling */
 .social-icons {
     font-size: 36px;
     cursor: pointer;
+    color: black;
+    padding-top: 5px;
 }
 .fa-facebook:hover,.fa-instagram:hover,.fa-linkedin:hover, .fa-github:hover{
     color: var(--color-secondary);
@@ -537,16 +596,23 @@ ul {
 }
 /* footer styling */
 #footer {
-    background-color: var(--color-grey-3);
-    text-align: center;
+    background-color: var(--color-grey-1);
+    margin-top: 30px;
+    padding-bottom: 10px;
 }
 
 
 //Media Queries++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-@media (min-width: 320px) {
-    svg text { font-size: 22px;
+
+@media (min-width: 430px) {
+    p.skill {
+        font-size: 22px;
+    }
+
+    .list-container ul li p {
+        margin-top: 3px;
     }
 }
 
@@ -557,7 +623,7 @@ ul {
         display: flex;
         flex-direction: row; 
         justify-content: space-around;
-        align-items: center;
+        font-size: 12px;
     }
 
     p {
@@ -566,6 +632,10 @@ ul {
 
     svg text {
         font-size: 3rem;
+    }
+
+    .theme-btn {
+        top: 9px;
     }
 
 }
@@ -594,6 +664,10 @@ svg text {
     text-align: center;
 }
 
+.main-nav {
+    font-size: 17px;
+}
+
 .page1{
     width: 10%;
     position: fixed;
@@ -606,67 +680,67 @@ svg text {
 
 
 
-.header-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%;
-  .left-header{
-    display: flex;
-    align-items: center;
-    position: relative;
-    .h-shape{
-        transition: all .4 ease-in-out;
-        width: 65%;
-        height: 100%;
-        background-color: var(--color-secondary);
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: -1;
-        clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
-    }
-    .image{
-        border-radius: var(--br-sm-2);
-        height: 90%;
-        width: 68%;
-        margin-left: 4rem;
-        background-color: var(--color-black);
-        transition: all .4s ease-in-out;
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all .4s ease-in-out;
-    filter: grayscale(100%);
-    &:hover{
-    filter: grayscale(0);
-            }
-        }
-    }
+// .header-content {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     height: 100%;
+//   .left-header{
+//     display: flex;
+//     align-items: center;
+//     position: relative;
+//     .h-shape{
+//         transition: all .4 ease-in-out;
+//         width: 65%;
+//         height: 100%;
+//         background-color: var(--color-secondary);
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         z-index: -1;
+//         clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
+//     }
+//     .image{
+//         border-radius: var(--br-sm-2);
+//         height: 90%;
+//         width: 68%;
+//         margin-left: 4rem;
+//         background-color: var(--color-black);
+//         transition: all .4s ease-in-out;
+// img{
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     transition: all .4s ease-in-out;
+//     filter: grayscale(100%);
+//     &:hover{
+//     filter: grayscale(0);
+//             }
+//         }
+//     }
   
 
-.right-header{
-    border: 3px solid purple;
- display: flex;
- flex-direction: column;
- justify-content: center;
- padding-right: 8rem;
+// .right-header{
+//     border: 3px solid purple;
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: center;
+//  padding-right: 8rem;
 
- .name{
-    font-size: 1.8rem;
-    line-height: 37px;
-    span{
-        color: var(--color-secondary);
-    }
- }  
+//  .name{
+//     font-size: 1.8rem;
+//     line-height: 37px;
+//     span{
+//         color: var(--color-secondary);
+//     }
+//  }  
 
- p {
-    border: 3px solid green;
-    text-align: center;
-    margin: 1.5rem 0;
-    line-height: 2rem;
- }
-}
+//  p {
+//     border: 3px solid green;
+//     text-align: center;
+//     margin: 1.5rem 0;
+//     line-height: 2rem;
+//  }
+// }
 
 
 
@@ -687,24 +761,57 @@ section {
 // Portfolio==================================================================
 
 
-.projects {
-    background-color: var(--bg-color);
-    padding: 32px 0;
-    margin-top: 2rem;
-  }
+// .projects {
+//     background-color: var(--bg-color);
+//     padding: 32px 0;
+//     margin-top: 2rem;
+//   }
   
-  .project-pic {
-    width: 65%;
-    height: 60%;
-  }
+//   .project-pic {
+//     width: 65%;
+//     height: 60%;
+//   }
   
-  .projects-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+//   .projects-container {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: center;
+//   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Contact form======================
 
@@ -720,6 +827,11 @@ section {
 // .company-info h3, .company-info ul, .brand {
 //     text-align: left;
 // }
+
+// .contact form .full {
+//     grid-column: 1 / 3;
+// }
+
 
 
 
@@ -1012,4 +1124,3 @@ section {
 
 
 
-}}

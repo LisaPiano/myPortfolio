@@ -85,8 +85,9 @@ h2 {
 .main-nav {
   display: flex;
   flex-direction: column;
-  margin-bottom: 22px;
-  border: 3px solid red;
+  margin-bottom: 15px;
+  margin-top: 33px;
+  padding-top: 18px;
 }
 
 .topnav {
@@ -124,6 +125,11 @@ section {
   transform: translateY(0) scale(1);
 }
 
+.paragraph {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
 .active {
   display: block;
   animation: scaleAnim 1.5s ease-in-out;
@@ -148,7 +154,7 @@ svg text {
   animation: stroke 4s;
   stroke-width: 2;
   stroke: var(--color-secondary);
-  font-size: 24px;
+  font-size: 30px;
 }
 
 @keyframes stroke {
@@ -179,7 +185,7 @@ svg text {
 .theme-btn {
   color: var(--color-lightbutton);
   position: absolute;
-  top: 0;
+  top: 16px;
   right: 5%;
   overflow-y: auto;
   width: 36px;
@@ -203,15 +209,26 @@ svg text {
 }
 
 .btn-con {
-  padding-bottom: 10px;
+  width: 80%;
+  padding: 25px;
+  font-weight: 500;
+  margin: 30px auto;
+  border: 3px solid white;
+  border-radius: 90%;
+}
+
+.btn-text {
+  color: red;
+}
+
+.btn-con:hover {
+  background: var(--color-grey-3);
 }
 
 .image {
   border-radius: var(--br-sm-2);
   width: 100%;
   margin: auto;
-  background-color: var(--color-black);
-  transition: all 0.4s ease-in-out;
 }
 
 img {
@@ -232,14 +249,6 @@ h1 {
 }
 .name span {
   color: var(--color-secondary);
-}
-
-p {
-  line-height: 2rem;
-  width: 100%;
-  margin: 20px;
-  font-size: 19px;
-  width: 90%;
 }
 
 .main-title {
@@ -349,9 +358,13 @@ h4 {
 
 .list-container ul li p {
   position: relative;
-  z-index: 10;
-  padding: 5px 10px;
   color: #fff;
+  margin-top: 15px;
+}
+
+p.skill {
+  font-size: 12px;
+  margin-left: 48px;
 }
 
 .portfolio-text {
@@ -366,7 +379,23 @@ h4 {
 }
 
 .project-pic {
-  width: 80%;
+  max-width: 80%;
+}
+
+.project-link {
+  margin: 40px;
+  border: 3px solid var(--color-secondary);
+}
+
+.project-link:hover {
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+
+.project-container {
+  border-bottom: 3px solid white;
+  margin: 40px;
+  padding: 20px;
 }
 
 .contact {
@@ -384,6 +413,20 @@ h4 {
 ul {
   list-style: none;
   padding: 0;
+}
+
+li {
+  padding: 20px;
+  font-size: 1rem;
+}
+
+ul li {
+  transition: all 0.2s ease-in-out;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  color: var(--color-black);
 }
 
 .brand {
@@ -404,6 +447,8 @@ ul {
 
 .info {
   background: var(--color-secondary);
+  text-align: center;
+  width: 100%;
 }
 
 .info h3, .info ul {
@@ -415,28 +460,34 @@ ul {
   background: var(color--grey-3);
 }
 
-.contact form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 30px;
+  width: 100%;
 }
 
 .contact form label {
-  display: block;
+  margin-bottom: 18px;
 }
 
 .contact form p {
   margin: 0;
 }
 
-.contact form .full {
-  grid-column: 1/3;
-}
-
 .contact form button {
   background: var(--color-secondary);
   border: 0;
   text-transform: uppercase;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 18px;
 }
 
 .contact form button:hover, .contact form button:focus {
@@ -445,10 +496,20 @@ ul {
   transition: background-color 2s ease-out;
 }
 
+label {
+  margin-top: 55px;
+}
+
+textarea {
+  width: 100%;
+}
+
 /* social media icons styling */
 .social-icons {
   font-size: 36px;
   cursor: pointer;
+  color: black;
+  padding-top: 5px;
 }
 
 .fa-facebook:hover, .fa-instagram:hover, .fa-linkedin:hover, .fa-github:hover {
@@ -461,13 +522,17 @@ ul {
 
 /* footer styling */
 #footer {
-  background-color: var(--color-grey-3);
-  text-align: center;
+  background-color: var(--color-grey-1);
+  margin-top: 30px;
+  padding-bottom: 10px;
 }
 
-@media (min-width: 320px) {
-  svg text {
+@media (min-width: 430px) {
+  p.skill {
     font-size: 22px;
+  }
+  .list-container ul li p {
+    margin-top: 3px;
   }
 }
 @media (min-width: 600px) {
@@ -475,13 +540,16 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    font-size: 12px;
   }
   p {
     max-width: 96%;
   }
   svg text {
     font-size: 3rem;
+  }
+  .theme-btn {
+    top: 9px;
   }
 }
 @media (min-width: 769px) {
@@ -502,6 +570,9 @@ ul {
     font-size: 2.1rem;
     text-align: center;
   }
+  .main-nav {
+    font-size: 17px;
+  }
   .page1 {
     width: 10%;
     position: fixed;
@@ -510,86 +581,10 @@ ul {
     transform: translateY(-50%);
     border: 3px solid white;
   }
-  .header-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%;
-  }
-  .header-content .left-header {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  .header-content .left-header .h-shape {
-    transition: all 0.4 ease-in-out;
-    width: 65%;
-    height: 100%;
-    background-color: var(--color-secondary);
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    -webkit-clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
-  }
-  .header-content .left-header .image {
-    border-radius: var(--br-sm-2);
-    height: 90%;
-    width: 68%;
-    margin-left: 4rem;
-    background-color: var(--color-black);
-    transition: all 0.4s ease-in-out;
-  }
-  .header-content .left-header .image img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    transition: all 0.4s ease-in-out;
-    filter: grayscale(100%);
-  }
-  .header-content .left-header .image img:hover {
-    filter: grayscale(0);
-  }
-  .header-content .left-header .right-header {
-    border: 3px solid purple;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 8rem;
-  }
-  .header-content .left-header .right-header .name {
-    font-size: 1.8rem;
-    line-height: 37px;
-  }
-  .header-content .left-header .right-header .name span {
-    color: var(--color-secondary);
-  }
-  .header-content .left-header .right-header p {
-    border: 3px solid green;
-    text-align: center;
-    margin: 1.5rem 0;
-    line-height: 2rem;
-  }
-  .header-content .left-header section {
+  section {
     margin-top: 7%;
   }
-  .header-content .left-header section .theme-btn {
+  section .theme-btn {
     top: 17%;
-  }
-  .header-content .left-header .projects {
-    background-color: var(--bg-color);
-    padding: 32px 0;
-    margin-top: 2rem;
-  }
-  .header-content .left-header .project-pic {
-    width: 65%;
-    height: 60%;
-  }
-  .header-content .left-header .projects-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
   }
 }/*# sourceMappingURL=styles.css.map */

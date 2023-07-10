@@ -1,145 +1,318 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a157bb7a45.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
+  <body class="main-content">
+    <!-- nav menu -->
+    <div class="main-nav">
+      <div class="topnav" id="mytopNav">
+        <a href="index.html" id="home" class="active grow">
+          <i class="fa-sharp fa-solid fa-home">Home</i></a
+        >
+      </div>
 
+      <div class="topnav" id="mytopNav">
+        <a href="about.html" id="about" class="active grow"
+          ><i class="fa-sharp fa-solid fa-user">About Me</i></a
+        >
+      </div>
 
-<body class="main-content">
+      <div class="topnav" id="mytopNav">
+        <a href="portfolio.html" id="portfolio" class="active grow"
+          ><i class="fa-sharp fa-solid fa-briefcase responsive">Portfolio</i></a
+        >
+      </div>
 
-        <!-- nav menu -->
-        <div class="main-nav">
+      <div class="topnav" id="mytopNav">
+        <a href="contact.html" id="contact" class="active grow"
+          ><i class="fa-sharp fa-solid fa-envelope">Contact Me</i></a
+        >
+      </div>
 
-            <div class="topnav" id="mytopNav">
-                <a href="index.html" id="home" class="active grow" > <i class="fas fa-home">Home</i></a>
-            </div>
-        
-             <div class="topnav" id="mytopNav">
-                <a href="about.html" id="about" class="active grow"><i class="fas fa-user">About Me</i></a>
-            </div>
-        
-             <div class="topnav" id="mytopNav">
-                <a href="portfolio.html" id="portfolio" class="active grow"><i class="fas fa-briefcase responsive">Portfolio</i></a>
-            </div>
-        
-             <div class="topnav" id="mytopNav">
-                <a href="contact.html" id="contact" class="active grow"><i class="fas fa-envelope">Contact Me</i></a>
-            </div>
+      <div class="topnav" id="mytopNav">
+        <!-- light-mode button -->
+        <div class="theme-btn grow">
+          <i class="fas fa-adjust"></i>
         </div>
+      </div>
+    </div>
 
     <header class="section sec1 header active" id="home">
+      <div class="header-content">
+        <div class="left-header">
+          <div class="h-shape"></div>
+          <div class="image">
+            <img src="img/portfolio.jpg" width: 200px; height: 200px; alt =
+            "picture of Lisa Campi Walters">
+          </div>
+        </div>
 
-        <div class="header-content">
+        <div class="right-header">
+          <div class="main-title">
+            <h2>My <span class="first-word">Portfolio</span></h2>
+          </div>
 
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/lisaPictureResized2.jpg" width: 200px; height: 200px; alt = "picture of Lisa Campi Walters">
-                </div>
-            </div> 
+          <div class="wrapper">
+            <svg>
+              <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Projects
+              </text>
+            </svg>
+          </div>
 
-            <div class="right-header">
-                 <br> 
-                 <div class="main-title">
-                     <h2>My <span class="first-word">Portfolio</span></h2>
-                 </div>
-         
-                        <div class="wrapper">
-                            <svg>
-                                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                                    Projects
-                                </text>
-                            </svg>
-                        </div>
+          <section class="projects" id="projects">
+            <div class="projects-container">
+              <!-- //4CMTA+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+              <div class="project-container project-card">
+                <a
+                  href="https://www.4cmta.org/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <img
+                    src="img/Screenshot2-4cmta.jpg"
+                    height="200px"
+                    width="200px"
+                    alt="Picture of website for the 4CMTA music organization"
+                    loading="lazy"
+                    class="project-pic"
+                /></a>
 
+                <h3 class="project-title">4CMTA Website</h3>
+                <a
+                  href="https://github.com/LisaPiano/FourCornersMusicTeachersAssociation"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <p class="project-details">
+                  This is the first website that I ever designed, developed and
+                  built, in 2021. It was for the 4CMTA (Four Corners Music
+                  Teachers Association). I used HTML, CSS and JavaScript, and I
+                  enjoyed working on the mobile-first design, and incorporating
+                  special splashes of interactivity.
+                </p>
+                <a
+                  href="https://www.4cmta.org/"
+                  target="_blank"
+                  class="project-link"
+                  >Visit the 4CMTA website here!</a
+                >
+              </div>
 
-                            <section class="projects" id="projects">
-                                <div class="projects-container">
-
-
-                                
-
-                                  <div class="project-container project-card">
-                                    <img src="img/Screenshot2-4cmta.jpg" alt="Picture of website for the 4CMTA music organization"
-                                      loading="lazy" class="project-pic"
-                                    />
-
-                                    <h3 class="project-title">4CMTA Website</h3>
-                                    <p class="project-details">
-                                      This is the first website that I ever designed, developed and built, in 2020. It was for the 4CMTA (Four Corners Music Teachers Association). 
-                                      I used HTML, CSS and JavaScript, and I enjoyed working on the mobile-first design, and the special splashes of interactivity. 
-                                    </p>
-                                    <a href="https://www.4cmta.org/" target="_blank" class="project-link">Check it Out!</a>
-                                  </div>
-
-
-
-
-
-
-                                  
-                                  <div class="project-container project-card">
-                                    <img src="img/APIEmployeeDirectory.png"
-                                      alt="netflic-clone"
-                                      loading="lazy"
-                                      class="project-pic"
-                                    />
-                                    <h3 class="project-title">API Employee Directory</h3>
-                                    <p class="project-details">
-                                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                                      ratione vel inventore labore commodi modi quos culpa aut saepe!
-                                      Alias!
-                                    </p>
-                                    <a href="https://lisapiano.github.io/APIEmployeeDirectory-Project8/" target="_blank" class="project-link">Check it Out</a>
-                                  </div>
-
-
-
-
-                                  <!-- //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-                                  <div class="project-container project-card">
-                                    <img src="assets/images/greenyEarth.png"
+              <!-- //FINAL PROJECT TBA+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+              <!-- <div class="project-container project-card"> -->
+              <!-- <img src="img/pictureWebAppDash.png"
                                       alt="greeny-earth"
                                       loading="lazy"
                                       class="project-pic"
                                     />
-                                    <h3 class="project-title">Greeny Earth</h3>
+                                    <h3 class="project-title">Dashboard for Web App</h3>
                                     <p class="project-details">
                                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
                                       ratione vel inventore labore commodi modi quos culpa aut saepe!
                                       Alias!
                                     </p>
-                                    <a href="#" target="_blank" class="project-link">Check it Out</a>
-                                  </div>
+                                    <a href="https://lisapiano.github.io/finalWebAppDash7/" target="_blank" class="project-link">Check it Out</a>
+                                  </div> -->
 
-                    
-                                </div>
-                              </section>
-                              </div>
-                              </div>
-                              </header>
+              <!-- //API Employee Directory+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+              <div class="project-container project-card">
+                <a
+                  href="https://lisapiano.github.io/APIEmployeeDirectory-Project8/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <img
+                    src="img/awesomeEmployees.png"
+                    height="200px"
+                    width="200px"
+                    alt="A page displaying employees, images of their faces, and their addresses and phone numbers"
+                    loading="lazy"
+                    class="project-pic"
+                /></a>
 
-                              
-         <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/lisa.campi.walters/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/lisa-walters-7517161b0/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/LisaPiano" target="_blank"><i class="fab fa-github"></i></a>
+                <h3 class="project-title">API Employee Directory</h3>
+                <a
+                  href="https://github.com/LisaPiano/APIEmployeeDirectory-Project8"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <p class="project-details">
+                  This was the 8th project for the Team Treehouse Techdegree.
+                  Using HTML, CSS and JS, I learned how to access a 3rd party
+                  API containing random employee data and display the results in
+                  a modal window.
+                </p>
+                <a
+                  href="https://lisapiano.github.io/APIEmployeeDirectory-Project8/"
+                  target="_blank"
+                  class="project-link"
+                  >Check out my API Employee Directory here!</a
+                >
+              </div>
+
+              <!-- //WebAppDash+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+              <div class="project-container project-card">
+                <a
+                  href="https://lisapiano.github.io/finalWebAppDash7/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <img
+                    src="img/webAppDash.png"
+                    height="200px"
+                    width="200px"
+                    alt="An image of a web application dashboard displaying traffic, social interactions and a form"
+                    loading="lazy"
+                    class="project-pic"
+                /></a>
+
+                <h3 class="project-title">Dashboard for Web App</h3>
+                <a
+                  href="https://github.com/LisaPiano/finalWebAppDash7"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <p class="project-details">
+                  Built an interactive web application dashboard using HTML, CSS
+                  grid and SVG, and javaScript.
+                </p>
+                <a
+                  href="https://lisapiano.github.io/finalWebAppDash7/"
+                  target="_blank"
+                  class="project-link"
+                  >View my web application dashboard!</a
+                >
+              </div>
+
+              <!-- //WheelOfFortune+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+              <div class="project-container project-card">
+                <a
+                  href="https://lisapiano.github.io/Project6GameShow/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <img
+                    src="img/wheelOfSuccess.png"
+                    height="200px"
+                    width="200px"
+                    alt="Picture of a Wheel of Fortune type game"
+                    loading="lazy"
+                    class=""
+                /></a>
+
+                <h3 class="project-title">Wheel of Success</h3>
+                <a
+                  href="https://github.com/LisaPiano/Project6GameShow"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <p class="project-details">
+                  Built a "Wheel Of Fortune"-like game where the user must try
+                  to guess letters to complete the phrase. Used JavaScript and
+                  the DOM for responsivity and interactions.
+                </p>
+                <a
+                  href="https://lisapiano.github.io/Project6GameShow/"
+                  target="_blank"
+                  class="project-link"
+                  >Please play my game!</a
+                >
+              </div>
+
+              <!-- //HOME DEPOT+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+              <div class="project-container project-card">
+                <img
+                  src="img/pictureWebAppDash.png"
+                  alt="greeny-earth"
+                  loading="lazy"
+                  class="project-pic"
+                />
+                <h3 class="project-title">Dashboard for Web App</h3>
+                <p class="project-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  ratione vel inventore labore commodi modi quos culpa aut
+                  saepe! Alias!
+                </p>
+                <a
+                  href="https://lisapiano.github.io/finalWebAppDash7/"
+                  target="_blank"
+                  class="project-link"
+                  >Check it Out</a
+                >
+              </div>
+
+              <!-- //CONVERSATIONS API+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+              <div class="project-container project-card">
+                <img
+                  src="img/pictureWebAppDash.png"
+                  alt="greeny-earth"
+                  loading="lazy"
+                  class="project-pic"
+                />
+                <h3 class="project-title">Dashboard for Web App</h3>
+                <p class="project-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  ratione vel inventore labore commodi modi quos culpa aut
+                  saepe! Alias!
+                </p>
+                <a
+                  href="https://lisapiano.github.io/finalWebAppDash7/"
+                  target="_blank"
+                  class="project-link"
+                  >Check it Out</a
+                >
+              </div>
             </div>
+          </section>
+          <!-- end div right header -->
         </div>
+        <!-- end div header -->
+      </div>
+    </header>
+
+    <!-- footer++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <footer id="footer">
+      <div class="container-fluid">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+          <a href="https://www.facebook.com/lisa.campi.walters/" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/lisa-walters-7517161b0/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/LisaPiano" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
     </footer>
-                              </body>
-                              </html>
+
+    <script src="app.js"></script>
+  </body>
+</html>
