@@ -367,6 +367,22 @@ p.skill {
   margin-left: 48px;
 }
 
+.clickOnButton {
+  height: 100px;
+  width: 100px;
+}
+
+.hiddenMessage {
+  display: none;
+}
+
+.surpriseMessage {
+  display: inline-block;
+  height: 75px;
+  width: 75px;
+  color: red;
+}
+
 .portfolio-text {
   padding: 2rem 0;
   text-align: center;

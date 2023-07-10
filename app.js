@@ -6,7 +6,21 @@ const themeBtn = document.querySelector('.theme-btn');
 
 themeBtn.addEventListener('click', () => {
     let element = document.body;
-    element.classList.toggle('light-mode')
+    element.classList.toggle('light-mode');
 })
 
+// Surprise button===========================================================
+
+const clickOnButton = document.querySelector('.clickOnButton');
+const hiddenMessage = document.querySelector('.hiddenMessage');
+const open = document.querySelector('.open');
+
+clickOnButton.addEventListener('click', () => {
+    hiddenMessage.classList.toggle('surpriseMessage');
+    if (open.innerHTML == "Click....for information!"){
+    open.textContent ="Close";
+    } else {
+        open.textContent = "Click....for information!";
+    }
+})
 
