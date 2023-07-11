@@ -112,6 +112,11 @@ section {
   margin-top: 433px;
 }
 
+.project-details {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .section {
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
@@ -151,7 +156,7 @@ svg {
 svg text {
   animation: stroke 4s;
   stroke-width: 2;
-  stroke: var(--color-secondary);
+  stroke: var(--color-white);
   font-size: 30px;
 }
 
@@ -231,7 +236,11 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 18px;
-  height: 180px;
+}
+
+.homePic, .aboutPic {
+  width: 100%;
+  height: 90%;
 }
 
 h1 {
@@ -327,7 +336,7 @@ h4 {
 }
 
 .list-container ul li:hover::before {
-  width: 100%;
+  width: 95%;
   background: var(--color-secondary);
   transition-delay: 0s, 0.3s;
 }
@@ -363,6 +372,10 @@ p.skill {
   margin-left: 48px;
 }
 
+.open, .close {
+  font-size: 1rem;
+}
+
 .clickOnButton {
   height: 100px;
   width: 100px;
@@ -382,9 +395,15 @@ p.skill {
 
 .surpriseMessage {
   display: inline-block;
-  height: 75px;
-  width: 75px;
+  height: 90px;
+  width: 100%;
   color: red;
+}
+
+.portfolioPic {
+  width: 100%;
+  height: 200px;
+  z-index: 4;
 }
 
 .portfolio-text {
@@ -551,6 +570,9 @@ textarea {
   }
 }
 @media (min-width: 600px) {
+  .homePic {
+    width: 46%;
+  }
   .main-nav {
     display: flex;
     flex-direction: row;
@@ -568,6 +590,16 @@ textarea {
   }
 }
 @media (min-width: 769px) {
+  div.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+  .homePic, .aboutPic {
+    height: 778px;
+    width: 300px;
+  }
   h1.name {
     border: 3px solid red;
     height: 42%;
@@ -588,7 +620,7 @@ textarea {
     height: 87%;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 24px;
+    margin-bottom: 65px;
   }
   svg text {
     font-size: 2.1rem;
@@ -605,21 +637,75 @@ textarea {
     transform: translateY(-50%);
     border: 3px solid white;
   }
-  div.header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+  .h-shape {
+    transition: all 0.4 ease-in-out;
+    width: 55%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    -webkit-clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
   }
-  img {
-    height: 470px;
-    width: 333px;
-    margin-left: 10px;
+  .projects-container {
+    border: 3px solid purple;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
   section {
     margin-top: 7%;
   }
-  section .theme-btn {
+  .theme-btn {
     top: 17%;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .h2myPortfolio {
+    margin-top: 184px;
+  }
+  .h2mySkills {
+    margin-top: 19px;
+  }
+  .portfolioPic {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 769px) and (min-width: 1023px) {
+  h1.name {
+    font-size: 1.8rem;
+  }
+  .h-shape {
+    width: 45%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .paragraph {
+    font-size: 1.7rem;
+    padding: 20px;
+  }
+  svg text {
+    font-size: 3rem;
+    z-index: 5;
+  }
+  svg {
+    width: 800px;
+    padding-bottom: 7px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 769px) and (min-width: 1200px) {
+  .homePic, .aboutPic {
+    width: 386px;
   }
 }/*# sourceMappingURL=styles.css.map */
