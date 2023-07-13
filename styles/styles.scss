@@ -121,7 +121,7 @@ header {
 }
 
 section{
-    border: 3px solid yellow;
+    border: 5px solid var(--color-grey-3);
     min-height: 100vh;
     width: 100%;
     text-align: center;
@@ -426,6 +426,10 @@ p.skill {
 
 //         //Portfolio======================================================================================================
 
+hr {
+    border: 3px solid var(--color-grey-2);
+    margin-bottom: 5px;
+}
 
 .portfolioPic {
     width: 100%;
@@ -450,7 +454,6 @@ p.skill {
 
           .project-link {
             margin: 40px;
-            border: 3px solid var(--color-secondary);
           }
 
           .project-link:hover {
@@ -632,6 +635,13 @@ textarea {
         top: 9px;
     }
 
+  
+
+    // size of the font in the contact form
+    ul li {
+        font-size: 23px;
+    }
+
 }
 // End 600px============================================================================================
 
@@ -650,7 +660,6 @@ textarea {
         width: 300px;
     }
     h1.name {
-        border: 3px solid red;
         height: 42%;
         width: 80%;
         margin-left: 70px;
@@ -667,7 +676,6 @@ text {
 }
 
 svg {
-    border: 3px solid yellow;
     width: 340px;
     height: 87%;
     text-align: center;
@@ -726,14 +734,11 @@ section {
     margin-top: 7%;
 }
 
-.theme-btn {
-    top: 17%;
-}
 
-ul {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
+// ul {
+//     display: grid;
+//     grid-template-columns: 50% 50%;
+// }
 
 
 
@@ -753,6 +758,16 @@ ul {
     z-index: 0;
 }
 
+  //The right side hr must disappear when there are 2 columns
+
+  .goneWhenLarge {
+    display: none;
+}
+
+.morePadding {
+    padding: 13px;
+}
+
 // contact==================================================================
 
 .wrap {
@@ -763,6 +778,26 @@ ul {
 
 
 // larger viewports=================================================================
+
+@media (min-width: 900px) {
+
+    //change style of the contact section
+    ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info {
+    width: 60%;
+    height: 50%;
+    margin-top: 49px;
+}
+
+ul li {
+    font-size: 15px;
+}
+}
+
 @media (min-width: 1023px) {
 
     h1.name {
@@ -790,6 +825,16 @@ svg {
     width: 800px;
     padding-bottom: 7px;
     margin-bottom: 60px;
+}
+
+//contact form
+.info {
+    height: 302px;
+    margin-top: 46px;
+}
+
+ul li {
+   font-size: 18px;
 }
 
 }

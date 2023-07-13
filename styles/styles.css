@@ -105,7 +105,7 @@ header {
 }
 
 section {
-  border: 3px solid yellow;
+  border: 5px solid var(--color-grey-3);
   min-height: 100vh;
   width: 100%;
   text-align: center;
@@ -400,6 +400,11 @@ p.skill {
   color: red;
 }
 
+hr {
+  border: 3px solid var(--color-grey-2);
+  margin-bottom: 5px;
+}
+
 .portfolioPic {
   width: 100%;
   height: 200px;
@@ -423,7 +428,6 @@ p.skill {
 
 .project-link {
   margin: 40px;
-  border: 3px solid var(--color-secondary);
 }
 
 .project-link:hover {
@@ -588,6 +592,9 @@ textarea {
   .theme-btn {
     top: 9px;
   }
+  ul li {
+    font-size: 23px;
+  }
 }
 @media (min-width: 769px) {
   div.header-content {
@@ -601,7 +608,6 @@ textarea {
     width: 300px;
   }
   h1.name {
-    border: 3px solid red;
     height: 42%;
     width: 80%;
     margin-left: 70px;
@@ -615,7 +621,6 @@ textarea {
     font-size: 18;
   }
   svg {
-    border: 3px solid yellow;
     width: 340px;
     height: 87%;
     text-align: center;
@@ -657,13 +662,6 @@ textarea {
   section {
     margin-top: 7%;
   }
-  .theme-btn {
-    top: 17%;
-  }
-  ul {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
   .h2myPortfolio {
     margin-top: 184px;
   }
@@ -675,9 +673,29 @@ textarea {
     position: absolute;
     z-index: 0;
   }
+  .goneWhenLarge {
+    display: none;
+  }
+  .morePadding {
+    padding: 13px;
+  }
   .wrap {
     display: flex;
     flex-direction: row;
+  }
+}
+@media (min-width: 769px) and (min-width: 900px) {
+  ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .info {
+    width: 60%;
+    height: 50%;
+    margin-top: 49px;
+  }
+  ul li {
+    font-size: 15px;
   }
 }
 @media (min-width: 769px) and (min-width: 1023px) {
@@ -702,6 +720,13 @@ textarea {
     width: 800px;
     padding-bottom: 7px;
     margin-bottom: 60px;
+  }
+  .info {
+    height: 302px;
+    margin-top: 46px;
+  }
+  ul li {
+    font-size: 18px;
   }
 }
 @media (min-width: 769px) and (min-width: 1200px) {
