@@ -121,7 +121,7 @@ header {
 }
 
 section{
-    border: 5px solid var(--color-grey-3);
+    // border: 5px solid var(--color-grey-3);
     min-height: 100vh;
     width: 100%;
     text-align: center;
@@ -432,10 +432,6 @@ video {
     margin-top: 30px;
 }
 
-.fa-brands {
-    border: 3px solid yello;
-}
-
 .portfolioPic {
     width: 100%;
     height: 200px;
@@ -468,8 +464,8 @@ video {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            border-bottom: 3px solid var(--color-grey-2);
-            height: 585px;
+            // border-bottom: 3px solid var(--color-grey-2);
+            height: 600px;
           }
 
           .project-words, span .project-link {
