@@ -115,6 +115,7 @@ section {
 .project-details {
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 30px;
 }
 
 .section {
@@ -400,9 +401,12 @@ p.skill {
   color: red;
 }
 
-hr {
-  border: 3px solid var(--color-grey-2);
-  margin-bottom: 5px;
+i {
+  border: 3px solid red;
+}
+
+.fa-brands {
+  border: 3px solid yello;
 }
 
 .portfolioPic {
@@ -424,15 +428,31 @@ hr {
 
 .project-pic {
   max-width: 80%;
-}
-
-.project-link {
-  margin: 40px;
+  margin-top: 30px;
 }
 
 .project-link:hover {
   cursor: pointer;
-  color: var(--color-secondary);
+  color: purple;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid var(--color-grey-2);
+  height: 552px;
+}
+
+.project-words, span .project-link {
+  border: 3px solid var(--color-grey-2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+span .project-words {
+  margin-bottom: 40px;
 }
 
 .contact {
@@ -655,15 +675,17 @@ textarea {
             clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
   }
   .projects-container {
-    border: 3px solid purple;
     display: grid;
     grid-template-columns: 50% 50%;
   }
   section {
     margin-top: 7%;
   }
+  .wrapper {
+    height: 180px;
+  }
   .h2myPortfolio {
-    margin-top: 184px;
+    margin-top: 227px;
   }
   .h2mySkills {
     margin-top: 19px;
@@ -672,9 +694,6 @@ textarea {
     width: 100%;
     position: absolute;
     z-index: 0;
-  }
-  .goneWhenLarge {
-    display: none;
   }
   .morePadding {
     padding: 13px;
