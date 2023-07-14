@@ -296,6 +296,12 @@ h1 {
 }
 
 // ABOUT CONTAINER++++++++++++++++++++
+
+.paragraph-top {
+    font-size: 3rem;
+    color: var(--color-secondary);
+}
+
 .main-title {
     font-size: 4rem;
 }
@@ -571,7 +577,8 @@ ul li:hover {
 }
 
 .contact {
-    background-color: var(color--grey-3);
+    background-color: lightslategrey;
+
 }
 
 //Form styles for contact here
@@ -784,6 +791,10 @@ textarea {
 
     //ABOUT======================
 
+    .paragraph-top {
+        font-size: 3rem;
+        color: var(--color-white);
+    }
 
 
     section {
