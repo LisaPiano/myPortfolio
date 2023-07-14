@@ -214,9 +214,6 @@ svg text {
     align-items: center;
     box-shadow: 0 3px 15px rgba(0,0,0,.3);
     transition: all .1s ease-in-out;
-    &:active {
-        transform: traslateY(-50px);
-    }
     i {
         font-size: 1.4rem;
         color: var(--color-lightbutton);
@@ -544,7 +541,7 @@ ul li:hover {
 }
 
 .contact {
-    background: var(color--grey-3);
+    background-color: var(color--grey-3);
 }
 
 //Form styles for contact here
@@ -691,7 +688,7 @@ textarea {
     }
 
 text {
-    font-size: 18;
+    font-size: 18px;
 }
 
 svg {
@@ -724,7 +721,6 @@ svg text {
 
 
     .h-shape{
-       transition: all .4 ease-in-out;
       width: 55%;
      height: 100%;
           background-color: var(--color-secondary);
