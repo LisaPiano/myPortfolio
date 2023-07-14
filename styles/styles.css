@@ -232,7 +232,7 @@ svg text {
   margin: auto;
 }
 
-img {
+img, video {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 18px;
@@ -403,6 +403,8 @@ p.skill {
 video {
   border-radius: 18px;
   margin-top: 30px;
+  width: 100%;
+  height: auto;
 }
 
 .portfolioPic {
@@ -422,7 +424,7 @@ video {
   margin-top: 2rem;
 }
 
-.project-pic {
+video, .project-pic {
   max-width: 80%;
   margin-top: 30px;
 }

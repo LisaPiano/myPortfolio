@@ -1,170 +1,178 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script
-src="https://kit.fontawesome.com/a157bb7a45.js"
-crossorigin="anonymous"
-></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a157bb7a45.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
+  <body class="main-content">
+    <!-- nav menu -->
+    <div class="main-nav">
+      <div class="topnav">
+        <a href="index.html" id="home" class="active grow">
+          <i class="fa-sharp fa-solid fa-home">Home</i></a
+        >
+      </div>
 
+      <div class="topnav">
+        <a href="about.html" id="about" class="active grow"
+          ><i class="fa-sharp fa-solid fa-user responsive">About Me</i></a
+        >
+      </div>
 
-<body class="main-content">
+      <div class="topnav">
+        <a href="portfolio.html" id="portfolio" class="active grow"
+          ><i class="fa-sharp fa-solid fa-briefcase">Portfolio</i></a
+        >
+      </div>
 
-      <!-- nav menu -->
-      <div class="main-nav">
+      <div class="topnav">
+        <a href="contact.html" id="contact" class="active grow"
+          ><i class="fa-sharp fa-solid fa-envelope">Contact Me</i></a
+        >
+      </div>
 
-        <div class="topnav" id="mytopNav">
-            <a href="index.html" id="home" class="active grow" > <i class="fa-sharp fa-solid fa-home">Home</i></a>
+      <div class="topnav">
+        <!-- light-mode button -->
+        <div class="theme-btn grow">
+          <i class="fas fa-adjust"></i>
         </div>
-    
-         <div class="topnav" id="mytopNav">
-            <a href="about.html" id="about" class="active grow"><i class="fa-sharp fa-solid fa-user responsive">About Me</i></a>
-        </div>
-    
-         <div class="topnav" id="mytopNav">
-            <a href="portfolio.html" id="portfolio" class="active grow"><i class="fa-sharp fa-solid fa-briefcase">Portfolio</i></a>
-        </div>
-    
-         <div class="topnav" id="mytopNav">
-            <a href="contact.html" id="contact" class="active grow"><i class="fa-sharp fa-solid fa-envelope">Contact Me</i></a>
-        </div>
-
-        <div class="topnav" id="mytopNav">
-            <!-- light-mode button -->
-            <div class="theme-btn grow">
-              <i class="fas fa-adjust"></i>
-          </div>
+      </div>
     </div>
-</div>
 
+    <header class="section sec1 header active">
+      <div class="header-content">
+        <div class="left-header">
+          <div class="h-shape"></div>
+          <div class="image">
+            <img
+              src="img/lisaPicture.png"
+              class="aboutPic"
+              alt="picture of Lisa Campi Walters"
+            />
+          </div>
+        </div>
 
-    <header class="section sec1 header active" id="home">
+        <div class="right-header">
+          <br />
+          <div class="main-title">
+            <h2>About <span class="first-word">Me</span></h2>
+          </div>
+          <div class="wrapper">
+            <svg>
+              <text x="50%" y="30%" dy=".35em" text-anchor="middle">
+                Nice to
+              </text>
+              <text x="50%" y="75%" dy=".35em" text-anchor="middle">
+                Meet You!
+              </text>
+            </svg>
+          </div>
 
-        <div class="header-content">
+          <p class="paragraph">
+            I love to create beautiful, responsive, and functional websites.
+          </p>
 
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/lisaPicture.png" class="aboutPic" alt = "picture of Lisa Campi Walters">
-                </div>
-            </div> 
-
-            <div class="right-header">
-                <br> 
-                <div class="main-title">
-                    <h2>About <span class="first-word">Me</span></h2>
-                </div>
-                        <div class="wrapper">
-                            <svg>
-                                <text x="50%" y="10%" dy=".35em" text-anchor="middle">
-                                To 
-                                </text>
-
-                                <text x="50%" y="35%" dy=".35em" text-anchor="middle">
-                                    Front End 
-                                    </text>
-
-                                    <text x="50%" y="60%" dy=".35em" text-anchor="middle">
-                                        Development
-                                        </text>
-
-                                <text x="50%" y="85%" dy=".35em" text-anchor="middle">
-                                    And Beyond!
-                                    </text>
-                            </svg>
-                        </div>
-                </h1>    
-
-                    <p class="paragraph">
-                        I love to create beautiful, responsive, and functional websites. 
-                    </p>
-
-                    <!-- BUTTON -->
+          <!-- BUTTON -->
           <div class="btn-con grow">
             <a href="newResumeForLisa.pdf" target="_blank" class="main-btn">
               <span class="btn-text">DOWNLOAD CV or RESUME</span>
               <span class="btn-icon"><i class="fas fa-download"></i></span>
             </a>
           </div>
-
-
-            </div>
         </div>
+      </div>
     </header>
 
-<main>
-         
-    <div class="about-container">
-        <p class="paragraph">My love for frontend development began in early 2020, when a number of my closest family members suffered serious health problems, and I found myself spending many months as a caregiver in remote hospital rooms. Although my career and source of comfort had always been the piano, I could not access any pianos from the hospital, and I was too distracted to focus on reading books. A friend of mine suggested that I build a website for our local teacher organization, and I thought that might be a great distraction while I was caring for my loved ones. So, as a total beginner, I first learned HTML, CSS and JavaScript, and by the time I had completed the website I knew that I had found another love. I enrolled in Team Treehouse to learn Front End Development, and later, while still teaching and caregiving full-time, I enrolled in TrueCoders to learn Software Engineering. At TrueCoders I learned C#, .NET, SQL, APIs, Test Driven Development, data structures and algorithms, and developed an unquenchable obsession with Codewars. I have loved every moment of learning and creating, and now that my caregiver responsibilities have ended, I am excited to pursue a career as a Frontend Developer. 
-        </p> 
-    </div>
+    <main>
+      <div class="about-container">
+        <p class="paragraph">
+          My love for frontend development began in early 2020, when a number of
+          my closest family members suffered serious health problems, and I
+          found myself spending many months as a caregiver in remote hospital
+          rooms. Although my career and source of comfort had always been the
+          piano, I could not access any pianos from the hospital, and I was too
+          distracted to focus on reading books. A friend of mine suggested that
+          I build a website for our local music teacher organization, and I
+          thought that might be a great distraction while I was caring for my
+          loved ones. So, as a total beginner, I first learned HTML, CSS and
+          JavaScript, and by the time I had completed the website I knew that I
+          had found another love. I enrolled in Team Treehouse to learn Front
+          End Development, and later, while still teaching and caregiving
+          full-time, I enrolled in TrueCoders to learn Software Engineering. At
+          TrueCoders I learned C#, .NET, SQL, APIs, Test Driven Development,
+          data structures and algorithms, and developed an unquenchable
+          obsession with Codewars. I have loved every moment of learning and
+          creating, and now that my caregiver responsibilities have ended, I am
+          excited to pursue a career as a Frontend Developer.
+        </p>
+      </div>
 
+      <button class="clickOnButton">
+        <span class="open">Click for more information!</span>
+      </button>
+      <p class="hiddenMessage">I also love movies, cooking, books and music!</p>
 
-    <button class="clickOnButton"><span class="open">Click for more information!</span></button>
-    <p class="hiddenMessage">I also love movies, cooking, books and music!</p>
+      <div class="about-body">
+        <div class="list-container">
+          <h2 class="h2mySkills">My Skills</h2>
+          <ul>
+            <li><p class="skill">HTML</p></li>
+            <li><p class="skill">CSS</p></li>
+            <li><p class="skill">JavaScript</p></li>
+            <li><p class="skill">Git and GitHub</p></li>
+            <li><p class="skill">Responsive Web Design</p></li>
+            <li><p class="skill">Sass</p></li>
+            <li><p class="skill">Flexbox and CSS Grid</p></li>
+            <li><p class="skill">C#.NET</p></li>
+            <li><p class="skill">ASP.NET</p></li>
+            <li><p class="skill">SQL</p></li>
+            <li><p class="skill">Visual Studio</p></li>
+            <li><p class="skill">Bootstrap</p></li>
+          </ul>
+        </div>
+      </div>
+    </main>
 
+    <!-- footer section-->
+    <footer id="footer">
+      <div class="container-fluid">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+          <a href="https://www.facebook.com/lisa.campi.walters/" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/lisa-walters-7517161b0/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/LisaPiano" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
 
-    
-    
-
-    <div class="about-body">
-    <div class="list-container">
-      <h2 class="h2mySkills">My Skills</h2>
-    <ul>
-        <li><p class="skill">HTML</p></li>
-        <li><p class="skill">CSS</p></li>
-        <li><p class="skill">JavaScript</p></li>
-        <li><p class="skill">Git and GitHub</p></li>
-        <li><p class="skill">Responsive Web Design</p></li>
-        <li><p class="skill">Sass</p></li>
-        <li><p class="skill">Flexbox and CSS Grid</p></li>
-        <li><p class="skill">C#.NET</p></li>
-        <li><p class="skill">ASP.NET</p></li>
-        <li><p class="skill">SQL</p></li>
-        <li><p class="skill">Visual Studio</p></li>
-        <li><p class="skill">Bootstrap</p></li>
-    </ul>     
-</div>
-</div>            
-</main>
-
-
-
-
-
-
-
-
-         <!-- footer section-->
-         <footer id="footer">
-            <div class="container-fluid">
-                <!-- social media icons -->
-                <div class="social-icons mt-4">
-                    <a href="https://www.facebook.com/lisa.campi.walters/" target="_blank"
-                    ><i class="fa-brands fa-facebook"></i
-                  ></a>
-                  <a
-                    href="https://www.linkedin.com/in/lisa-walters-7517161b0/"
-                    target="_blank"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
-                  <a href="https://github.com/LisaPiano" target="_blank"
-                    ><i class="fa-brands fa-github"></i
-                  ></a>
-                </div>
-            </div>
-        </footer>
-
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -180,7 +180,6 @@ svg text {
 }
 
 
-
 @keyframes stroke {
 	0%   {
 		fill: rgba(72,138,204,0); stroke: rgba(42,157,132,1);
@@ -250,7 +249,7 @@ svg text {
         width: 100%;
         margin: auto;
  }
-    img {
+    img, video {
         object-fit: cover;
         border-radius: 18px;
     }
@@ -430,7 +429,11 @@ p.skill {
 video {
     border-radius: 18px;
     margin-top: 30px;
+    width: 100%;
+    height: auto;
+
 }
+
 
 .portfolioPic {
     width: 100%;
@@ -449,7 +452,7 @@ video {
             margin-top: 2rem;
           }
           
-          .project-pic {
+          video, .project-pic {
             max-width: 80%;
             margin-top: 30px;
           }

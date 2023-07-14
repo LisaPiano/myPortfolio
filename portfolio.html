@@ -27,31 +27,31 @@
   <body class="main-content">
     <!-- nav menu -->
     <div class="main-nav">
-      <div class="topnav" id="mytopNav">
+      <div class="topnav">
         <a href="index.html" id="home" class="active grow">
           <i class="fa-sharp fa-solid fa-home">Home</i></a
         >
       </div>
 
-      <div class="topnav" id="mytopNav">
+      <div class="topnav">
         <a href="about.html" id="about" class="active grow"
           ><i class="fa-sharp fa-solid fa-user">About Me</i></a
         >
       </div>
 
-      <div class="topnav" id="mytopNav">
+      <div class="topnav">
         <a href="portfolio.html" id="portfolio" class="active grow"
           ><i class="fa-sharp fa-solid fa-briefcase responsive">Portfolio</i></a
         >
       </div>
 
-      <div class="topnav" id="mytopNav">
+      <div class="topnav">
         <a href="contact.html" id="contact" class="active grow"
           ><i class="fa-sharp fa-solid fa-envelope">Contact Me</i></a
         >
       </div>
 
-      <div class="topnav" id="mytopNav">
+      <div class="topnav">
         <!-- light-mode button -->
         <div class="theme-btn grow">
           <i class="fas fa-adjust"></i>
@@ -59,14 +59,17 @@
       </div>
     </div>
 
-    <header class="section sec1 header active" id="home">
+    <header class="section sec1 header active">
       <div class="header-content">
         <div class="left-header">
           <div class="h-shape"></div>
           <div class="image">
-            <img src="img/portfolio.jpg" width: 200px; height: 200px;
-            class="portfolioPic" alt="picture of lovely computer with coffee on
-            a desk" />
+            <img
+              src="img/portfolio.jpg"
+              class="portfolioPic"
+              alt="picture of lovely computer with coffee on
+            a desk"
+            />
           </div>
         </div>
 
@@ -85,7 +88,7 @@
             </svg>
           </div>
 
-          <section class="projects" id="projects">
+          <section class="projects">
             <div class="projects-container">
               <!-- Projects Start++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
@@ -99,8 +102,6 @@
                   >
                     <img
                       src="img/4CMTApicture.png"
-                      height="200px"
-                      width="200px"
                       alt="A page displaying the website for the Four Corners Music Teachers Association"
                       loading="lazy"
                       class="project-pic"
@@ -144,8 +145,6 @@
                   >
                     <img
                       src="img/awesomeEmployees.png"
-                      height="200px"
-                      width="200px"
                       alt="A page displaying employees, images of their faces, and their addresses and phone numbers"
                       loading="lazy"
                       class="project-pic"
@@ -190,8 +189,6 @@
                   >
                     <img
                       src="img/webAppDash.png"
-                      height="200px"
-                      width="200px"
                       alt="A page displaying the many functions of a webb app dashboard"
                       loading="lazy"
                       class="project-pic"
@@ -231,19 +228,12 @@
               <div class="project-container project-card">
                 <!-- <img
                   src="img/wheelOfSuccessVideo.mp4"
-                  height="200px"
-                  width="200px"
                   alt="Picture of a game called Wheel of Success"
                   loading="lazy"
                   class="project-pic"
               /> -->
                 <div class="part1">
-                  <video
-                    width="200px"
-                    height="200px"
-                    controls
-                    class="project-link"
-                  >
+                  <video width="484" height="225" controls class="project-link">
                     <source
                       src="img/wheelOfSuccessVideo.mp4"
                       type="video/mp4"
@@ -276,6 +266,89 @@
                 </div>
               </div>
 
+              <!-- //Photo Gallery+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+              <div class="project-container project-card">
+                <div class="part1">
+                  <a
+                    href="https://lisapiano.github.io/PhotoGallery5/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <img
+                      src="img/galleryProject.png"
+                      alt="A page that responsively displays photographs of beautiful scenes in nature"
+                      loading="lazy"
+                      class="project-pic"
+                  /></a>
+
+                  <h3 class="project-title">Photo Gallery</h3>
+                  <a
+                    href="https://github.com/LisaPiano/PhotoGallery5"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+
+                <div class="part2">
+                  <p class="project-details morePadding">
+                    This was the 5th project for the Team Treehouse Techdegree.
+                    I created an interactive photo gallery with CSS Grid, 3rd
+                    Party Plugins, JavaScript and the DOM, images in thumbnail
+                    and Lightbox.
+                  </p>
+                </div>
+
+                <div class="part3">
+                  <a
+                    href="https://lisapiano.github.io/PhotoGallery5/"
+                    target="_blank"
+                    class="project-link"
+                    ><span class="project-words">See my Photo Gallery!</span></a
+                  >
+                </div>
+              </div>
+
+              <!-- //Random Quote Generator+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+              <div class="project-container project-card">
+                <div class="part1">
+                  <a
+                    href="https://lisapiano.github.io/randomQuoteGenerator/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <img
+                      src="img/randomQuoteGenerator.png"
+                      alt="A page that responsively displays photographs of beautiful scenes in nature"
+                      loading="lazy"
+                      class="project-pic"
+                  /></a>
+
+                  <h3 class="project-title">Photo Gallery</h3>
+                  <a
+                    href="https://github.com/LisaPiano/randomQuoteGenerator"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+
+                <div class="part2">
+                  <p class="project-details morePadding">
+                    I built an array of objects in JavaScript to create a random
+                    Classical music quote genera tor that displays a new quote
+                    (object) each time a button is clicked, or after every 10
+                    seconds.
+                  </p>
+                </div>
+
+                <div class="part3">
+                  <a
+                    href="https://lisapiano.github.io/randomQuoteGenerator/"
+                    target="_blank"
+                    class="project-link"
+                    ><span class="project-words">Read a Quote!</span></a
+                  >
+                </div>
+              </div>
               <!-- //API.NET Core MVC+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
               <div class="project-container project-card">
@@ -288,12 +361,7 @@
                   class="project-pic"
                     /> -->
                 <div class="part1">
-                  <video
-                    width="200px"
-                    height="200px"
-                    controls
-                    class="project-link"
-                  >
+                  <video width="484" height="225" controls class="project-link">
                     <source src="img/bestBuyVideo.mp4" type="video/mp4" />
                   </video>
 
@@ -327,12 +395,7 @@
               <!-- //++Kanye West and Ron Swanson have a weird conversation+++++++++++++++++++++++++++++++++++++++++++ -->
               <div class="project-container project-card">
                 <div class="part1">
-                  <video
-                    width="200px"
-                    height="200px"
-                    controls
-                    class="project-link"
-                  >
+                  <video width="484" height="225" controls class="project-link">
                     <source src="img/ronAndKanye.mp4" type="video/mp4" />
                   </video>
 
@@ -356,8 +419,8 @@
                 </div>
 
                 <div class="part3">
-                 <span class="project-words">Click play to see the video!</span
-                    ></a
+                  <span class="project-words"
+                    >Click play to see the video!</span
                   >
                 </div>
               </div>
