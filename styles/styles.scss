@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +7,7 @@
 
 :root {
     --color-primary: #191d2b;
-    --color-secondary:  #27ae60;
+    --color-secondary: #27ae60;
     --color-lightbutton: #F56692;
     --color-white: #ffffff;
     --color-black: #000;
@@ -21,19 +19,19 @@
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
     --br-sm-2: 14px;
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
+    --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .2);
 }
 
 
 .light-mode {
     --color-primary: #FFFFFF;
-    --color-secondary:  #F56692;
+    --color-secondary: #F56692;
     --color-lightbutton: #27ae60;
     --color-white: #454e56;
     --color-black: #000;
     --color-grey-0: #f8f8f8;
     --color-grey-1: #6c7983;
-    --color-grey-2: #6c7983
+    --color-grey-2: #6c7983;
     --color-grey-3: #6c7983;
     --color-grey-4: #454e56;
     --color-grey-5: #f8f8f8;
@@ -93,7 +91,7 @@ div.header-content {
 
 .main-nav {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     margin-bottom: 15px;
     margin-top: 33px;
     padding-top: 18px;
@@ -120,7 +118,7 @@ header {
     text-align: center;
 }
 
-section{
+section {
     // border: 5px solid var(--color-grey-3);
     min-height: 100vh;
     width: 100%;
@@ -140,7 +138,10 @@ section{
     background-color: var(--color-primary);
 }
 
-.sec1, .sec2, .sec3, .sec4{
+.sec1,
+.sec2,
+.sec3,
+.sec4 {
     display: none;
     transform: translateY(0) scale(1);
 }
@@ -154,43 +155,62 @@ section{
 .active {
     display: block;
     animation: scaleAnim 1.5s ease-in-out;
+
     @keyframes scaleAnim {
-        0%{
+        0% {
             transform: translateY(-100%) scaleY(0);
         }
-        100%{
+
+        100% {
             transform: translateY(0) scaleY(1)
         }
-     }
+    }
 }
 
 //Squiggle header
 
-svg {
-	font-family: "Poppins", sans-serif;
-	width: 100%; 
+.cursive {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
     height: 100%;
     text-align: center;
 }
-svg text {
-	animation: stroke 4s;
-	stroke-width: 2;
-	stroke: var(--color-white);
+
+.cursive text {
+    animation: stroke 4s;
+    stroke-width: 2;
+    stroke: var(--color-white);
     font-size: 30px;
 }
 
 
 @keyframes stroke {
-	0%   {
-		fill: rgba(72,138,204,0); stroke: rgba(42,157,132,1);
-		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
-	}
-	70%  {fill: rgba(72,138,204,0); stroke: #2a9d84; }
-	80%  {fill: rgba(72,138,204,0); stroke: (#27AE60); stroke-width: 3; }
-	100% {
-		fill: (#27AE60); stroke: rgba(42,157,132,0);
-		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
-	}
+    0% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgba(42, 157, 132, 1);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+
+    70% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: #2a9d84;
+    }
+
+    80% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: (#27AE60);
+        stroke-width: 3;
+    }
+
+    100% {
+        fill: (#27AE60);
+        stroke: rgba(42, 157, 132, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
 }
 
 
@@ -212,8 +232,9 @@ svg text {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 3px 15px rgba(0,0,0,.3);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .3);
     transition: all .1s ease-in-out;
+
     i {
         font-size: 1.4rem;
         color: var(--color-lightbutton);
@@ -236,40 +257,43 @@ svg text {
 .btn-con:hover {
     background: var(--color-grey-3);
 }
+
 // // End light-dark-mode+=============================================
 
 
 
 
- .image{
-        border-radius: var(--br-sm-2);
-        width: 100%;
-        margin: auto;
- }
-    img, video {
-        object-fit: cover;
-        border-radius: 18px;
-    }
+.image {
+    border-radius: var(--br-sm-2);
+    width: 100%;
+    margin: auto;
+}
 
-    .homePic, .aboutPic {
-        width: 100%;
-        height: 90%;
-    }
+img,
+video {
+    object-fit: cover;
+    border-radius: 18px;
+}
 
-    h1 {
-        text-align: center;
-        margin-top: 35px;
-        line-height: 0;
-    }
+.homePic,
+.aboutPic {
+    width: 100%;
+    height: 90%;
+}
 
- .name {
+h1 {
+    text-align: center;
+    margin-top: 35px;
+    line-height: 0;
+}
+
+.name {
     font-size: 24px;
-    span{
+
+    span {
         color: var(--color-secondary);
     }
- }  
- 
-
+}
 
 // ABOUT CONTAINER++++++++++++++++++++
 .main-title {
@@ -288,18 +312,19 @@ h4 {
     color: var(--color-secondary);
 }
 
-        .about-item {
-            border: 1px solid var(--color-grey-5);
-            border-radius: 5px;
-            transition: all .4s ease-in-out;
-            box-shadow: 1px 2px 15px rgba(0,0,0,.1);
-            &:hover {
-                cursor: default;
-                transform: translate(-5px);
-                border: 1px solid var(--color-secondary);
-                box-shadow: 1px 4px 15px rgba(0,0,0,.32);
-            }
-        }
+.about-item {
+    border: 1px solid var(--color-grey-5);
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, .1);
+
+    &:hover {
+        cursor: default;
+        transform: translate(-5px);
+        border: 1px solid var(--color-secondary);
+        box-shadow: 1px 4px 15px rgba(0, 0, 0, .32);
+    }
+}
 
 .about-body {
     display: flex;
@@ -313,7 +338,7 @@ h4 {
 .list-container {
     padding: 40px;
     background: #182b3c;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
 }
 
 .list-container h2 {
@@ -391,12 +416,13 @@ p.skill {
     margin-left: 48px;
 }
 
-.open, .close {
+.open,
+.close {
     font-size: 1rem;
 }
 
 .clickOnButton {
-    height:100px;
+    height: 100px;
     width: 100px;
     border-radius: 50%;
     color: white;
@@ -415,8 +441,8 @@ p.skill {
 
 .surpriseMessage {
     display: inline-block;
-    height:90px;
-    width:100%;
+    height: 90px;
+    width: 100%;
     color: red;
 }
 
@@ -438,47 +464,50 @@ video {
     z-index: 4;
 
 }
-        .portfolio-text {
-            padding: 2rem 0;
-            text-align: center;
-        }
 
-        .projects {
-            background-color: var(--bg-color);
-            padding: 32px 0;
-            margin-top: 2rem;
-          }
-          
-          video, .project-pic {
-            max-width: 80%;
-            margin-top: 30px;
-          }
+.portfolio-text {
+    padding: 2rem 0;
+    text-align: center;
+}
 
-          .project-link:hover {
-            cursor: pointer;
-            color: purple;
-          }
+.projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+}
 
-          .project-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            // border-bottom: 3px solid var(--color-grey-2);
-            height: 600px;
-          }
+video,
+.project-pic {
+    max-width: 80%;
+    margin-top: 30px;
+}
 
-          .project-words, span .project-link {
-            border: 3px solid var(--color-grey-2);
-            padding: 10px;
-            border-radius: 5px;
-          }
+.project-link:hover {
+    cursor: pointer;
+    color: purple;
+}
 
-          .part3 {
-            margin-bottom: 40px;
-          }
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // border-bottom: 3px solid var(--color-grey-2);
+    height: 600px;
+}
 
-         
+.project-words,
+span .project-link {
+    border: 3px solid var(--color-grey-2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.part3 {
+    margin-bottom: 40px;
+}
+
+
 //    /CONTACT SECTIOn=================================================================================================
 .contact {
     line-height: 1.6;
@@ -486,7 +515,7 @@ video {
 }
 
 .container {
-   max-width: 1170px;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
@@ -508,9 +537,9 @@ ul li {
 
 ul li:hover {
 
-        transform: scale(1.1);
-        color: var(--color-black);
-    }
+    transform: scale(1.1);
+    color: var(--color-black);
+}
 
 
 .brand {
@@ -525,7 +554,7 @@ ul li:hover {
     box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
-.wrapper > * {
+.wrapper>* {
     padding: 1em;
 }
 
@@ -535,7 +564,8 @@ ul li:hover {
     width: 100%;
 }
 
-.info h3, .info ul {
+.info h3,
+.info ul {
     text-align: center;
     margin: 0 0 1rem 0;
 }
@@ -551,13 +581,14 @@ ul li:hover {
     align-items: center;
     justify-content: center;
 }
+
 input {
     height: 30px;
     width: 100%;
 }
 
 .contact form label {
-   margin-bottom: 18px;
+    margin-bottom: 18px;
 }
 
 .contact form p {
@@ -574,7 +605,8 @@ input {
     margin-top: 18px;
 }
 
-.contact form button:hover, .contact form button:focus {
+.contact form button:hover,
+.contact form button:focus {
     color: var(--color-white);
     outline: 0;
     transition: background-color 2s ease-out;
@@ -597,12 +629,18 @@ textarea {
     color: black;
     padding-top: 5px;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-linkedin:hover, .fa-github:hover{
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-github:hover {
     color: var(--color-secondary);
 }
+
 .fab {
     color: var(--color-black);
 }
+
 /* footer styling */
 #footer {
     background-color: var(--color-grey-1);
@@ -628,13 +666,13 @@ textarea {
 @media (min-width: 600px) {
     //page1-----------------------------------------------------------
 
-.homePic {
-    width: 46%;
-}
- 
+    .homePic {
+        width: 46%;
+    }
+
     .main-nav {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: space-around;
         font-size: 12px;
     }
@@ -643,7 +681,7 @@ textarea {
         max-width: 96%;
     }
 
-    svg text {
+    .cursive text {
         font-size: 3rem;
     }
 
@@ -651,7 +689,7 @@ textarea {
         top: 9px;
     }
 
-  
+
 
     // size of the font in the contact form
     ul li {
@@ -659,6 +697,7 @@ textarea {
     }
 
 }
+
 // End 600px============================================================================================
 
 @media (min-width: 769px) {
@@ -670,11 +709,13 @@ textarea {
         justify-content: center;
         align-content: center;
     }
-    
-    .homePic, .aboutPic {
+
+    .homePic,
+    .aboutPic {
         height: 778px;
         width: 300px;
     }
+
     h1.name {
         height: 42%;
         width: 80%;
@@ -687,181 +728,182 @@ textarea {
         margin-bottom: 17px;
     }
 
-text {
-    font-size: 18px;
-}
-
-svg {
-    width: 340px;
-    height: 87%;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 65px;
-}
-
-
-svg text {
-    font-size: 2.1rem;
-    text-align: center;
-}
-
-.main-nav {
-    font-size: 17px;
-}
-
-.page1{
-    width: 10%;
-    position: fixed;
-    top: 58%;
-    right: 3%;
-    transform: translateY(-50%);//centered in the y axis
-    border: 3px solid white;
-}
-
-
-
-    .h-shape{
-      width: 55%;
-     height: 100%;
-          background-color: var(--color-secondary);
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: -2;
-            clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
-  }
-  
-
-.projects-container {
-
- display: grid;
- grid-template-columns: 50% 50%;
-}
-
-
-
-
-//ABOUT======================
-
-
-
-section {
-    margin-top: 7%;
-}
-
-
-// ul {
-//     display: grid;
-//     grid-template-columns: 50% 50%;
-// }
-
-
-
-// Portfolio==================================================================
-
-.wrapper {
-    height: 180px;
-}
-
-.h2myPortfolio{
-    margin-top: 227px;
-}
-
-.h2mySkills {
-    margin-top: 19px;
-}
-
-.portfolioPic {
-    width: 100%;
-    position:absolute;
-    z-index: 0;
-}
-
-.morePadding {
-    padding: 13px;
-}
-
-.projects-container {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-// contact==================================================================
-
-.wrap {
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-// larger viewports=================================================================
-
-@media (min-width: 900px) {
-
-    //change style of the contact section
-    ul {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.info {
-    width: 60%;
-    height: 50%;
-    margin-top: 49px;
-}
-
-ul li {
-    font-size: 15px;
-}
-}
-
-@media (min-width: 1023px) {
-
-    h1.name {
-        font-size: 1.8rem;
+    text {
+        font-size: 18px;
     }
-    
-    .h-shape{
-       width: 45%;
-      height: 100%;
-       left: 0;
-       top: 0;
-   }
 
-   .paragraph {
-    font-size: 1.7rem;
-    padding: 20px;
-   }
-
-svg text {
-font-size: 3rem;
-z-index: 5;
-}
-
-svg {
-    width: 800px;
-    padding-bottom: 7px;
-    margin-bottom: 60px;
-}
-
-//contact form
-.info {
-    height: 302px;
-    margin-top: 46px;
-}
-
-ul li {
-   font-size: 18px;
-}
-
-}
-
-// END 1022px===================================================================================================
-@media (min-width: 1200px) {
-
-    .homePic, .aboutPic {
-        width: 386px;
+    .cursive {
+        width: 340px;
+        height: 87%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 65px;
     }
-}
+
+
+    .cursive text {
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    .main-nav {
+        font-size: 17px;
+    }
+
+    .page1 {
+        width: 10%;
+        position: fixed;
+        top: 58%;
+        right: 3%;
+        transform: translateY(-50%); //centered in the y axis
+        border: 3px solid white;
+    }
+
+
+
+    .h-shape {
+        width: 55%;
+        height: 100%;
+        background-color: var(--color-secondary);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -2;
+        clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
+    }
+
+
+    .projects-container {
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+
+
+
+    //ABOUT======================
+
+
+
+    section {
+        margin-top: 7%;
+    }
+
+
+    // ul {
+    //     display: grid;
+    //     grid-template-columns: 50% 50%;
+    // }
+
+
+
+    // Portfolio==================================================================
+
+    .wrapper {
+        height: 180px;
+    }
+
+    .h2myPortfolio {
+        margin-top: 227px;
+    }
+
+    .h2mySkills {
+        margin-top: 19px;
+    }
+
+    .portfolioPic {
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .morePadding {
+        padding: 13px;
+    }
+
+    .projects-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    // contact==================================================================
+
+    .wrap {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    // larger viewports=================================================================
+
+    @media (min-width: 900px) {
+
+        //change style of the contact section
+        ul {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .info {
+            width: 60%;
+            height: 50%;
+            margin-top: 49px;
+        }
+
+        ul li {
+            font-size: 15px;
+        }
+    }
+
+    @media (min-width: 1023px) {
+
+        h1.name {
+            font-size: 1.8rem;
+        }
+
+        .h-shape {
+            width: 45%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .paragraph {
+            font-size: 1.7rem;
+            padding: 20px;
+        }
+
+        .cursive text {
+            font-size: 3rem;
+            z-index: 5;
+        }
+
+        .cursive {
+            width: 800px;
+            padding-bottom: 7px;
+            margin-bottom: 60px;
+        }
+
+        //contact form
+        .info {
+            height: 302px;
+            margin-top: 46px;
+        }
+
+        ul li {
+            font-size: 18px;
+        }
+
+    }
+
+    // END 1022px===================================================================================================
+    @media (min-width: 1200px) {
+
+        .homePic,
+        .aboutPic {
+            width: 386px;
+        }
+    }
 }
