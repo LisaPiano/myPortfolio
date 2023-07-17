@@ -258,6 +258,10 @@ h1 {
   color: var(--color-secondary);
 }
 
+.left-header {
+  perspective: 700px;
+}
+
 .paragraph-top {
   font-size: 3rem;
   color: var(--color-secondary);
