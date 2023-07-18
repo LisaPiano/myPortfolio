@@ -140,6 +140,7 @@ section {
   display: block;
   animation: scaleAnim 1.5s ease-in-out;
 }
+
 @keyframes scaleAnim {
   0% {
     transform: translateY(-100%) scaleY(0);
@@ -148,7 +149,6 @@ section {
     transform: translateY(0) scaleY(1);
   }
 }
-
 .cursive {
   font-family: "Poppins", sans-serif;
   width: 100%;
@@ -205,6 +205,7 @@ section {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.1s ease-in-out;
 }
+
 .theme-btn i {
   font-size: 1.4rem;
   color: var(--color-lightbutton);
@@ -235,7 +236,7 @@ section {
 img,
 video {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 18px;
 }
 
@@ -254,12 +255,9 @@ h1 {
 .name {
   font-size: 24px;
 }
+
 .name span {
   color: var(--color-secondary);
-}
-
-.left-header {
-  perspective: 700px;
 }
 
 .paragraph-top {
@@ -289,6 +287,7 @@ h4 {
   transition: all 0.4s ease-in-out;
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
 }
+
 .about-item:hover {
   cursor: default;
   transform: translate(-5px);
@@ -688,7 +687,7 @@ textarea {
     top: 0;
     z-index: -2;
     -webkit-clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
   }
   .projects-container {
     display: grid;
@@ -777,4 +776,5 @@ textarea {
   .aboutPic {
     width: 386px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */

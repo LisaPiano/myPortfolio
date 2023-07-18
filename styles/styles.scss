@@ -22,7 +22,6 @@
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .2);
 }
 
-
 .light-mode {
     --color-primary: #FFFFFF;
     --color-secondary: #F56692;
@@ -41,7 +40,7 @@
 body {
     background-color: var(--color-primary);
     font-size: 1.1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: var(--color-white);
     width: 100%;
     height: 100%;
@@ -55,31 +54,23 @@ body {
     color: var(--color-secondary);
 }
 
-//name  for Lisa Campi Walters============================================
 #name {
     display: inline-block;
 }
 
-//Title decorations=============================================================
 h2 {
-
-    font-size: 3.7rem
+    font-size: 3.7rem;
 }
 
-//first word of every title is a different color
 .first-word {
     color: var(--color-secondary);
 }
 
-// //Grow and change color on Hover class===========================================================================
-
 .grow {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     color: var(--color-white);
 }
 
-
-// //Display in single column===
 div.header-content {
     display: block;
 }
@@ -101,11 +92,6 @@ div.header-content {
     margin-bottom: 20px;
 }
 
-
-
-// Overall Body===========================================================================
-
-
 a {
     display: inline-block;
     text-decoration: none;
@@ -119,7 +105,6 @@ header {
 }
 
 section {
-    // border: 5px solid var(--color-grey-3);
     min-height: 100vh;
     width: 100%;
     text-align: center;
@@ -134,7 +119,7 @@ section {
 
 .section {
     transform: translateY(-100%) scale(0);
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     background-color: var(--color-primary);
 }
 
@@ -151,23 +136,20 @@ section {
     margin-right: 18px;
 }
 
-//Screen descending of whatever section is active
 .active {
     display: block;
     animation: scaleAnim 1.5s ease-in-out;
-
-    @keyframes scaleAnim {
-        0% {
-            transform: translateY(-100%) scaleY(0);
-        }
-
-        100% {
-            transform: translateY(0) scaleY(1)
-        }
-    }
 }
 
-//Squiggle header
+@keyframes scaleAnim {
+    0% {
+        transform: translateY(-100%) scaleY(0);
+    }
+
+    100% {
+        transform: translateY(0) scaleY(1);
+    }
+}
 
 .cursive {
     font-family: "Poppins", sans-serif;
@@ -183,11 +165,10 @@ section {
     font-size: 30px;
 }
 
-
 @keyframes stroke {
     0% {
         fill: rgba(72, 138, 204, 0);
-        stroke: rgba(42, 157, 132, 1);
+        stroke: rgb(42, 157, 132);
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
         stroke-width: 2;
@@ -200,23 +181,18 @@ section {
 
     80% {
         fill: rgba(72, 138, 204, 0);
-        stroke: (#27AE60);
+        stroke: #27AE60;
         stroke-width: 3;
     }
 
     100% {
-        fill: (#27AE60);
+        fill: #27AE60;
         stroke: rgba(42, 157, 132, 0);
         stroke-dashoffset: -25%;
         stroke-dasharray: 50% 0;
         stroke-width: 0;
     }
 }
-
-
-// // END FANCY PART===============================================================================================
-
-// // Styles for the light/dark mode==============================================================================================
 
 .theme-btn {
     color: var(--color-lightbutton);
@@ -232,15 +208,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, .3);
-    transition: all .1s ease-in-out;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.1s ease-in-out;
+}
 
-    i {
-        font-size: 1.4rem;
-        color: var(--color-lightbutton);
-        pointer-events: none;
-    }
-
+.theme-btn i {
+    font-size: 1.4rem;
+    color: var(--color-lightbutton);
+    pointer-events: none;
 }
 
 .btn-con {
@@ -258,11 +233,6 @@ section {
     background: var(--color-grey-3);
 }
 
-// // End light-dark-mode+=============================================
-
-
-
-
 .image {
     border-radius: var(--br-sm-2);
     width: 100%;
@@ -271,6 +241,7 @@ section {
 
 img,
 video {
+    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 18px;
 }
@@ -289,18 +260,11 @@ h1 {
 
 .name {
     font-size: 24px;
-
-    span {
-        color: var(--color-secondary);
-    }
 }
 
-
-.left-header {
-    perspective: 700px;
+.name span {
+    color: var(--color-secondary);
 }
-
-// ABOUT CONTAINER++++++++++++++++++++
 
 .paragraph-top {
     font-size: 3rem;
@@ -326,15 +290,15 @@ h4 {
 .about-item {
     border: 1px solid var(--color-grey-5);
     border-radius: 5px;
-    transition: all .4s ease-in-out;
-    box-shadow: 1px 2px 15px rgba(0, 0, 0, .1);
+    transition: all 0.4s ease-in-out;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
 
-    &:hover {
-        cursor: default;
-        transform: translate(-5px);
-        border: 1px solid var(--color-secondary);
-        box-shadow: 1px 4px 15px rgba(0, 0, 0, .32);
-    }
+.about-item:hover {
+    cursor: default;
+    transform: translate(-5px);
+    border: 1px solid var(--color-secondary);
+    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
 }
 
 .about-body {
@@ -373,9 +337,8 @@ h4 {
     padding-right: 5px;
 }
 
-//circle containing little arrow
 .list-container ul li::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 24px;
     left: 0;
@@ -388,16 +351,14 @@ h4 {
     box-sizing: border-box;
 }
 
-//green line that stretches
 .list-container ul li:hover::before {
     width: 95%;
     background: var(--color-secondary);
     transition-delay: 0s, 0.3s;
 }
 
-//little arrow
 .list-container ul li::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 37px;
     left: 12px;
@@ -449,7 +410,6 @@ p.skill {
     display: none;
 }
 
-
 .surpriseMessage {
     display: inline-block;
     height: 90px;
@@ -457,23 +417,17 @@ p.skill {
     color: red;
 }
 
-
-//         //Portfolio=====================================================================================================
-
 video {
     border-radius: 18px;
     margin-top: 30px;
     width: 100%;
     height: auto;
-
 }
-
 
 .portfolioPic {
     width: 100%;
     height: 200px;
     z-index: 4;
-
 }
 
 .portfolio-text {
@@ -503,7 +457,6 @@ video,
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // border-bottom: 3px solid var(--color-grey-2);
     height: 600px;
 }
 
@@ -518,8 +471,6 @@ span .project-link {
     margin-bottom: 40px;
 }
 
-
-//    /CONTACT SECTIOn=================================================================================================
 .contact {
     line-height: 1.6;
     padding: 1em;
@@ -543,15 +494,13 @@ li {
 }
 
 ul li {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 ul li:hover {
-
     transform: scale(1.1);
     color: var(--color-black);
 }
-
 
 .brand {
     text-align: center;
@@ -583,10 +532,8 @@ ul li:hover {
 
 .contact {
     background-color: lightslategrey;
-
 }
 
-//Form styles for contact here
 .contact {
     display: flex;
     flex-direction: column;
@@ -632,8 +579,6 @@ textarea {
     width: 100%;
 }
 
-//End Contact Section---BEGIN FOOTER SECTION++++++++++++++++++++++++++++++++++++++++++++++++++
-
 /* social media icons styling */
 .social-icons {
     font-size: 36px;
@@ -661,10 +606,6 @@ textarea {
     margin-bottom: 0px;
 }
 
-
-//Media Queries++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
 @media (min-width: 430px) {
     p.skill {
         font-size: 22px;
@@ -676,8 +617,6 @@ textarea {
 }
 
 @media (min-width: 600px) {
-    //page1-----------------------------------------------------------
-
     .homePic {
         width: 46%;
     }
@@ -701,20 +640,12 @@ textarea {
         top: 9px;
     }
 
-
-
-    // size of the font in the contact form
     ul li {
         font-size: 23px;
     }
-
 }
 
-// End 600px============================================================================================
-
 @media (min-width: 769px) {
-
-
     div.header-content {
         display: flex;
         flex-direction: row;
@@ -752,7 +683,6 @@ textarea {
         margin-bottom: 65px;
     }
 
-
     .cursive text {
         font-size: 2.1rem;
         text-align: center;
@@ -767,11 +697,9 @@ textarea {
         position: fixed;
         top: 58%;
         right: 3%;
-        transform: translateY(-50%); //centered in the y axis
+        transform: translateY(-50%);
         border: 3px solid white;
     }
-
-
 
     .h-shape {
         width: 55%;
@@ -781,40 +709,23 @@ textarea {
         left: 0;
         top: 0;
         z-index: -2;
+        -webkit-clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
         clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
     }
 
-
     .projects-container {
-
         display: grid;
         grid-template-columns: 50% 50%;
     }
-
-
-
-
-    //ABOUT======================
 
     .paragraph-top {
         font-size: 3rem;
         color: var(--color-white);
     }
 
-
     section {
         margin-top: 7%;
     }
-
-
-    // ul {
-    //     display: grid;
-    //     grid-template-columns: 50% 50%;
-    // }
-
-
-
-    // Portfolio==================================================================
 
     .wrapper {
         height: 180px;
@@ -843,83 +754,73 @@ textarea {
         padding-right: 30px;
     }
 
-    // contact==================================================================
-
     .wrap {
         display: flex;
         flex-direction: row;
     }
+}
 
-
-
-    // larger viewports=================================================================
-
-    @media (min-width: 900px) {
-
-        //change style of the contact section
-        ul {
-            display: grid;
-            grid-template-columns: 50% 50%;
-        }
-
-        .info {
-            width: 60%;
-            height: 50%;
-            margin-top: 49px;
-        }
-
-        ul li {
-            font-size: 15px;
-        }
+@media (min-width: 769px) and (min-width: 900px) {
+    ul {
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 
-    @media (min-width: 1023px) {
-
-        h1.name {
-            font-size: 1.8rem;
-        }
-
-        .h-shape {
-            width: 45%;
-            height: 100%;
-            left: 0;
-            top: 0;
-        }
-
-        .paragraph {
-            font-size: 1.7rem;
-            padding: 20px;
-        }
-
-        .cursive text {
-            font-size: 3rem;
-            z-index: 5;
-        }
-
-        .cursive {
-            width: 800px;
-            padding-bottom: 7px;
-            margin-bottom: 60px;
-        }
-
-        //contact form
-        .info {
-            height: 302px;
-            margin-top: 46px;
-        }
-
-        ul li {
-            font-size: 18px;
-        }
-
+    .info {
+        width: 60%;
+        height: 50%;
+        margin-top: 49px;
     }
 
-    // END 1022px===================================================================================================
-    @media (min-width: 1200px) {
-
-        .homePic,
-        .aboutPic {
-            width: 386px;
-        }
+    ul li {
+        font-size: 15px;
     }
 }
+
+@media (min-width: 769px) and (min-width: 1023px) {
+    h1.name {
+        font-size: 1.8rem;
+    }
+
+    .h-shape {
+        width: 45%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .paragraph {
+        font-size: 1.7rem;
+        padding: 20px;
+    }
+
+    .cursive text {
+        font-size: 3rem;
+        z-index: 5;
+    }
+
+    .cursive {
+        width: 800px;
+        padding-bottom: 7px;
+        margin-bottom: 60px;
+    }
+
+    .info {
+        height: 302px;
+        margin-top: 46px;
+    }
+
+    ul li {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) and (min-width: 1200px) {
+
+    .homePic,
+    .aboutPic {
+        width: 386px;
+    }
+}
+
+/*# sourceMappingURL=styles.css.map */
