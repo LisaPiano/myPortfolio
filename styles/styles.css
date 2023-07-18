@@ -145,10 +145,12 @@ section {
   0% {
     transform: translateY(-100%) scaleY(0);
   }
+
   100% {
     transform: translateY(0) scaleY(1);
   }
 }
+
 .cursive {
   font-family: "Poppins", sans-serif;
   width: 100%;
@@ -171,15 +173,18 @@ section {
     stroke-dasharray: 0 50%;
     stroke-width: 2;
   }
+
   70% {
     fill: rgba(72, 138, 204, 0);
     stroke: #2a9d84;
   }
+
   80% {
     fill: rgba(72, 138, 204, 0);
     stroke: #27AE60;
     stroke-width: 3;
   }
+
   100% {
     fill: #27AE60;
     stroke: rgba(42, 157, 132, 0);
@@ -188,6 +193,7 @@ section {
     stroke-width: 0;
   }
 }
+
 .theme-btn {
   color: var(--color-lightbutton);
   position: absolute;
@@ -508,7 +514,7 @@ ul li:hover {
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
-.wrapper > * {
+.wrapper>* {
   padding: 1em;
 }
 
@@ -604,33 +610,41 @@ textarea {
   p.skill {
     font-size: 22px;
   }
+
   .list-container ul li p {
     margin-top: 3px;
   }
 }
+
 @media (min-width: 600px) {
   .homePic {
     width: 46%;
   }
+
   .main-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 12px;
   }
+
   p {
     max-width: 96%;
   }
+
   .cursive text {
     font-size: 3rem;
   }
+
   .theme-btn {
     top: 9px;
   }
+
   ul li {
     font-size: 23px;
   }
 }
+
 @media (min-width: 769px) {
   div.header-content {
     display: flex;
@@ -638,11 +652,13 @@ textarea {
     justify-content: center;
     align-content: center;
   }
+
   .homePic,
   .aboutPic {
     height: 778px;
     width: 300px;
   }
+
   h1.name {
     height: 42%;
     width: 80%;
@@ -650,12 +666,15 @@ textarea {
     padding-top: 15px;
     padding-bottom: 125px;
   }
+
   .btn-con {
     margin-bottom: 17px;
   }
+
   text {
     font-size: 18px;
   }
+
   .cursive {
     width: 340px;
     height: 87%;
@@ -663,13 +682,16 @@ textarea {
     margin-top: 20px;
     margin-bottom: 65px;
   }
+
   .cursive text {
     font-size: 2.1rem;
     text-align: center;
   }
+
   .main-nav {
     font-size: 17px;
   }
+
   .page1 {
     width: 10%;
     position: fixed;
@@ -678,6 +700,7 @@ textarea {
     transform: translateY(-50%);
     border: 3px solid white;
   }
+
   .h-shape {
     width: 55%;
     height: 100%;
@@ -689,92 +712,115 @@ textarea {
     -webkit-clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
     clip-path: polygon(0 1%, 65% 1%, 100% 100%, 0% 100%);
   }
+
   .projects-container {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+
   .paragraph-top {
     font-size: 3rem;
     color: var(--color-white);
   }
+
   section {
     margin-top: 7%;
   }
+
   .wrapper {
     height: 180px;
   }
+
   .h2myPortfolio {
     margin-top: 227px;
   }
+
   .h2mySkills {
     margin-top: 19px;
   }
+
   .portfolioPic {
     width: 100%;
     position: absolute;
     z-index: 0;
   }
+
   .morePadding {
     padding: 13px;
   }
+
   .projects-container {
     padding-left: 30px;
     padding-right: 30px;
   }
+
   .wrap {
     display: flex;
     flex-direction: row;
   }
 }
+
 @media (min-width: 769px) and (min-width: 900px) {
   ul {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+
   .info {
     width: 60%;
     height: 50%;
     margin-top: 49px;
   }
+
   ul li {
     font-size: 15px;
   }
 }
+
 @media (min-width: 769px) and (min-width: 1023px) {
   h1.name {
     font-size: 1.8rem;
   }
+
   .h-shape {
     width: 45%;
     height: 100%;
     left: 0;
     top: 0;
   }
+
   .paragraph {
     font-size: 1.7rem;
     padding: 20px;
   }
+
   .cursive text {
     font-size: 3rem;
     z-index: 5;
   }
+
   .cursive {
     width: 800px;
     padding-bottom: 7px;
     margin-bottom: 60px;
   }
+
   .info {
     height: 302px;
     margin-top: 46px;
   }
+
   ul li {
     font-size: 18px;
   }
 }
+
 @media (min-width: 769px) and (min-width: 1200px) {
+
   .homePic,
   .aboutPic {
     width: 386px;
   }
 }
+
 /*# sourceMappingURL=styles.css.map */
